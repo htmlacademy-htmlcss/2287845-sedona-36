@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Uluk Usonbekov](https://up.htmlacademy.ru/htmlcss/36/user/2287845).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Кукушкин] (https://htmlacademy.ru/profile/kukushkinds).
 
 ---
 
