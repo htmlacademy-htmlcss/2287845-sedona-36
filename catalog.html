@@ -76,12 +76,12 @@
           </svg>
         </li>
         <li class="breadcrumb-item">
-          <span>Гостиницы</span>
+          <span class="filter-hotel">Гостиницы</span>
         </li>
       </ul>
     </div>
     <form action="#" method="get">
-      <div class="filter">
+      <div class="filter-item">
         <fieldset class="filter-fieldset">
           <legend class="legend">Инфраструктура:</legend>
           <ul class="filter-fieldset-list">
@@ -135,19 +135,19 @@
         <div class="price">
           <label class="min-price">
             <span class="filter-price-span">от</span>
-            <input type="text" name="min-price" value="0">
+            <input class="filter-price-input-left" type="text" name="min-price" value="0">
           </label>
           <label class="max-price">
             <span class="filter-price-span">до</span>
-            <input type="text" name="max-price" value="9000">
+            <input class="filter-price-input-right" type="text" name="max-price" value="9000">
           </label>
           <div class="range">
             <button class="button-range"></button>
             <div class="range"></div>
             <button class="button-range"></button>
           </div>
-          <button class="filter-button" type="submit">Применить</button>
-          <button class="filter-button" type="reset">Сбросить</button>
+          <button class="filter-button filter-button-apply" type="submit">Применить</button>
+          <button class="filter-button filter-button-reset" type="reset">Сбросить</button>
         </div>
       </div>
     </form>
@@ -155,7 +155,7 @@
   <section class="catalog">
     <h2 class="catalog-title">Найдено гостиниц: 38</h2>
     <select class="catalog-selector" aria-label="Сортировка">
-      <option value="cheap">Сначала дешевые</option>
+      <option class="catalog-cheap" value="cheap">Сначала дешевые</option>
     </select>
     <a href="#" class="button-view" aria-label="Показать мелкие карточки">
       <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -207,7 +207,7 @@
       </svg>
     </a>
     <div class="hotels-card">
-      <img src="images/hotel-1.jpg" alt="Гостиница Амара" width="300" height="212">
+      <img class="hotels-card-img" src="images/hotel-1.jpg" alt="Гостиница Амара" width="300" height="212">
       <h3 class="hotels-card-title">Amara Resort & Spa</h3>
       <div class="texts">
         <span class="hotels-card-type">Гостиница</span>
@@ -217,17 +217,17 @@
         <a href="#" class="hotel-card-button-brown">Подробнее</a>
         <button class="button-card">В избранное</button>
       </div>
-      <div class="raiting">
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <p class="raiting-title">Рейтинг: 8,5</p>
+      <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <p class="rating-title">Рейтинг: 8,5</p>
       </div>
 
     </div>
     <div class="hotels-card">
-      <img src="images/hotel-2.jpg" alt="Гостиница Виллас" width="300" height="212">
+      <img class="hotels-card-img" src="images/hotel-2.jpg" alt="Гостиница Виллас" width="300" height="212">
       <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
       <div class="texts">
         <span class="hotels-card-type">Гостиница</span>
@@ -235,19 +235,19 @@
       </div>
       <div class="hotel-card-buttons">
         <a href="#" class="hotel-card-button-brown">Подробнее</a>
-        <button class="button-card">В избранном</button>
+        <button class="button-card favorite-card">В избранном</button>
       </div>
-      <div class="raiting">
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <p class="raiting-title">Рейтинг: 9,2</p>
+      <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <p class="rating-title">Рейтинг: 9,2</p>
       </div>
 
     </div>
     <div class="hotels-card">
-      <img src="images/hotel-3.jpg" alt="Гостиница Десерт Куаил Инн" width="300" height="212">
+      <img class="hotels-card-img" src="images/hotel-3.jpg" alt="Гостиница Десерт Куаил Инн" width="300" height="212">
       <h3 class="hotels-card-title">Desert Quail Inn</h3>
       <div class="texts">
         <span class="hotels-card-type">Гостиница</span>
@@ -257,16 +257,16 @@
         <a href="#" class="hotel-card-button-brown">Подробнее</a>
         <button class="button-card">В избранное</button>
       </div>
-      <div class="raiting">
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <p class="raiting-title">Рейтинг: 6,9</p>
+      <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <p class="rating-title">Рейтинг: 6,9</p>
       </div>
 
     </div>
     <div class="hotels-card">
-      <img src="images/hotel-4.jpg" alt="Гостиница Грин Три инн" width="300" height="212">
+      <img class="hotels-card-img" src="images/hotel-4.jpg" alt="Гостиница Грин Три инн" width="300" height="212">
       <h3 class="hotels-card-title">GreenTree Inn</h3>
       <div class="texts">
         <span class="hotels-card-type">Гостиница</span>
@@ -276,16 +276,16 @@
         <a href="#" class="hotel-card-button-brown">Подробнее</a>
         <button class="button-card">В избранное</button>
       </div>
-      <div class="raiting">
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <p class="raiting-title">Рейтинг: 5,0</p>
+      <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <p class="rating-title">Рейтинг: 5,0</p>
       </div>
 
     </div>
     <ol class="pagination-list">
       <li class="pagination-item">
-        <a href="#" class="pagination-link">1</a>
+        <a href="#" class="pagination-link pagination-first">1</a>
       </li>
       <li class="pagination-item">
         <a href="#" class="pagination-link">2</a>
@@ -305,11 +305,14 @@
     </ol>
   </section>
   <section class="subscribe">
-    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-    <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-      <input type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
-      <button class="subscription-button" type="submit">Подписаться</button>
+    <div class="section section-white">
+      <h2 class="section-title">Подпишитесь на рассылку</h2>
+      <p class="section-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    </div>
+    <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+      <input class="subscribe-input" type="email" name="subscription-email" id="subscription-email"
+             placeholder="Ваш e-mail" required>
+      <button class="subscribe-button" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
@@ -343,8 +346,8 @@
       </a>
     </li>
   </ul>
-  <a href="tel:78128121212">+7 (812) 812-12-12</a>
-  <a href="https://htmlacademy.ru/" target="_blank">
+  <a class="footer-tel" href="tel:78128121212">+7 (812) 812-12-12</a>
+  <a class="footer-link" href="https://htmlacademy.ru/" target="_blank">
     <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black"/>
       <path
