@@ -62,12 +62,12 @@
   </div>
 </header>
 <main class="main-inner">
-  <section class="filter">
+  <section class="filter-main">
     <div class="filter-header">
       <h1 class="filter-header-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a class="breadcrumb-link" href="index.html" aria-label="Главная"></a>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html" aria-label="Главная"></a>
           <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
@@ -75,15 +75,15 @@
             <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
           </svg>
         </li>
-        <li class="breadcrumb-item">
-          <span>Гостиницы</span>
+        <li class="breadcrumbs-item">
+          <span class="filter-span">Гостиницы</span>
         </li>
       </ul>
     </div>
-    <form action="#" method="get">
+    <form class="filter-form" action="#" method="get">
       <div class="filter">
         <fieldset class="filter-fieldset">
-          <legend class="legend">Инфраструктура:</legend>
+          <legend class="filter-legend">Инфраструктура:</legend>
           <ul class="filter-fieldset-list">
             <li class="filter-fieldset-item">
               <label class="filter-checkbox">
@@ -107,7 +107,7 @@
         </fieldset>
 
         <fieldset class="filter-fieldset">
-          <legend class="legend">Тип жилья:</legend>
+          <legend class="filter-legend">Тип жилья:</legend>
           <ul class="filter-fieldset-list">
             <li class="filter-fieldset-item">
               <label class="filter-radio">
@@ -135,19 +135,19 @@
         <div class="price">
           <label class="min-price">
             <span class="filter-price-span">от</span>
-            <input type="text" name="min-price" value="0">
+            <input class="filter-price-input" type="text" name="min-price" value="0">
           </label>
           <label class="max-price">
             <span class="filter-price-span">до</span>
-            <input type="text" name="max-price" value="9000">
+            <input class="filter-price-input" type="text" name="max-price" value="9000">
           </label>
           <div class="range">
             <button class="button-range"></button>
             <div class="range"></div>
             <button class="button-range"></button>
           </div>
-          <button class="filter-button" type="submit">Применить</button>
-          <button class="filter-button" type="reset">Сбросить</button>
+          <button class="filter-button filter-button-apply" type="submit">Применить</button>
+          <button class="filter-button filter-button-reset" type="reset">Сбросить</button>
         </div>
       </div>
     </form>
@@ -155,9 +155,9 @@
   <section class="catalog">
     <h2 class="catalog-title">Найдено гостиниц: 38</h2>
     <select class="catalog-selector" aria-label="Сортировка">
-      <option value="cheap">Сначала дешевые</option>
+      <option class="catalog-cheap" value="cheap">Сначала дешевые</option>
     </select>
-    <a href="#" class="button-view" aria-label="Показать мелкие карточки">
+    <a  href="#" class="button-view" aria-label="Показать мелкие карточки">
       <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_69108_52)">
           <path d="M4 0H0V6H4V0Z" fill="black"/>
@@ -217,12 +217,12 @@
         <a href="#" class="hotel-card-button-brown">Подробнее</a>
         <button class="button-card">В избранное</button>
       </div>
-      <div class="raiting">
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <p class="raiting-title">Рейтинг: 8,5</p>
+      <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <p class="rating-title">Рейтинг: 8,5</p>
       </div>
 
     </div>
@@ -235,14 +235,14 @@
       </div>
       <div class="hotel-card-buttons">
         <a href="#" class="hotel-card-button-brown">Подробнее</a>
-        <button class="button-card">В избранном</button>
+        <button class="button-card button-card-green">В избранном</button>
       </div>
-      <div class="raiting">
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <p class="raiting-title">Рейтинг: 9,2</p>
+      <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <p class="rating-title">Рейтинг: 9,2</p>
       </div>
 
     </div>
@@ -257,11 +257,11 @@
         <a href="#" class="hotel-card-button-brown">Подробнее</a>
         <button class="button-card">В избранное</button>
       </div>
-      <div class="raiting">
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <p class="raiting-title">Рейтинг: 6,9</p>
+      <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <p class="rating-title">Рейтинг: 6,9</p>
       </div>
 
     </div>
@@ -276,16 +276,16 @@
         <a href="#" class="hotel-card-button-brown">Подробнее</a>
         <button class="button-card">В избранное</button>
       </div>
-      <div class="raiting">
-        <span class="raiting-star"></span>
-        <span class="raiting-star"></span>
-        <p class="raiting-title">Рейтинг: 5,0</p>
+      <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <p class="rating-title">Рейтинг: 5,0</p>
       </div>
 
     </div>
     <ol class="pagination-list">
       <li class="pagination-item">
-        <a href="#" class="pagination-link">1</a>
+        <a href="#" class="pagination-link pagination-link-gray">1</a>
       </li>
       <li class="pagination-item">
         <a href="#" class="pagination-link">2</a>
@@ -305,11 +305,13 @@
     </ol>
   </section>
   <section class="subscribe">
-    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-    <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-      <input type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
-      <button class="subscription-button" type="submit">Подписаться</button>
+    <div>
+      <h2 class="section-title">Подпишитесь на рассылку</h2>
+      <p class="section-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    </div>
+    <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+      <input class="subscribe-input" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
+      <button class="subscribe-button" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
@@ -343,8 +345,8 @@
       </a>
     </li>
   </ul>
-  <a href="tel:78128121212">+7 (812) 812-12-12</a>
-  <a href="https://htmlacademy.ru/" target="_blank">
+  <a class="footer-tel" href="tel:78128121212">+7 (812) 812-12-12</a>
+  <a class="footer-link" href="https://htmlacademy.ru/" target="_blank">
     <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black"/>
       <path

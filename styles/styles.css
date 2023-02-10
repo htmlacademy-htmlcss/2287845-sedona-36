@@ -1,7 +1,3 @@
-:root {
-
-}
-
 @font-face {
   font-family: "Pt Sans";
   font-style: normal;
@@ -16,6 +12,14 @@
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+
+fieldset {
+  border: none;
+}
+
+li {
+  list-style: none;
 }
 
 body {
@@ -36,6 +40,8 @@ body {
   background: #ffffff;
 }
 
+
+
 .navigation-link {
   background: #FFFFFF;
   color: #000000;
@@ -55,6 +61,182 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
+
+.filter-main {
+  background-image: url("../images/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.filter-span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-fieldset-span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: capitalize;
+}
+
+.filter-legend {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.filter-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.filter-price-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.filter-price-span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filter-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.filter-price-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filter-button-apply {
+  background-color: #82B3D3;
+  border-radius: 4px;
+  border: none;
+  width: 191px;
+  height: 36px;
+}
+
+.filter-button-reset {
+  background: none;
+  border: none;
+
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-cheap {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  width: 141px;
+  height: 21px;
+  color: #333333;
+}
+
+.hotels-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+.hotels-card-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: capitalize;
+
+}
+
+.hotels-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+.hotel-card-button-brown {
+  display: block;
+  text-align: center;
+  background-color: #756157;
+  border-radius: 4px;
+  color: #FFFFFF;
+  border: none;
+  width: 140px;
+  height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-card {
+  background: #82B3D3;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  width: 140px;
+  height: 36px;
+  text-transform: uppercase;
+}
+
+.button-card-green {
+  background-color: #7DB54F;
+}
+
+.rating-title {
+  display: inline-block;
+  text-align: center;
+  width: 140px;
+  height: 37px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+}
+
+.pagination-link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.pagination-link-gray {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
 
 .welcome {
   margin-bottom: 35px;
@@ -80,6 +262,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  text-transform: none;
 }
 
 .section-white .section-subtitle {
@@ -151,10 +334,22 @@ body {
 }
 
 .subscribe {
+  color: #000000;
+}
+
+.subscribe-bg {
   background-repeat: no-repeat;
   background-image: url("../images/Subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
+  background-color: #89ABB8;
+  color: #FFFFFF;
 }
+
+.subscribe-bg .section-subtitle {
+  color: #FFFFFF;
+}
+
+
 .subscribe-input {
   background-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
@@ -162,6 +357,7 @@ body {
   width: 452px;
   height: 52px;
 }
+
 .subscribe-button {
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
