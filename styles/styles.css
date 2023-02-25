@@ -157,11 +157,6 @@ body {
   text-align: center;
 }
 
-.filter-main {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .catalog {
   display: flex;
@@ -195,7 +190,13 @@ body {
 
 .buttons {
   display: flex;
-  margin: 14px 0 14px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-width: 268px;
+  min-height: 64px;
 }
 
 .search {
@@ -214,18 +215,33 @@ body {
   padding: 8px 34px;
 }
 
+.filter {
+  display: flex;
+
+}
 
 .filter-main {
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
+  min-width: 1200px;
+  padding: 35px 70px;
+  margin: 0 0 50px 0;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .filter-span {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+
+
+.filter-fieldset {
+  margin: 0;
+  border: none;
 }
 
 .filter-fieldset-span {
@@ -235,17 +251,52 @@ body {
   text-transform: capitalize;
 }
 
+
 .filter-legend {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.filter-fieldset-list {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
 }
 
 .filter-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+}
+
+.filter-form {
+  display: flex;
+}
+
+.optional {
+  width: 160px;
+  margin-right: 70px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 70px 70px 140px;
 }
 
 .filter-price-title {
@@ -253,7 +304,10 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  margin: 0 0 0 140px;
+  padding: 0;
 }
+
 
 .filter-price-span {
   font-weight: 400;
@@ -290,6 +344,8 @@ body {
 }
 
 .catalog-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -303,30 +359,108 @@ body {
   width: 141px;
   height: 21px;
   color: #333333;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
+
+.button-view:first-child {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.button-view {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 17px 16px;
+  margin-left: 8px;
+}
+
+.catalog-sorting {
+  display: flex;
+  padding: 14px 12px;
+  margin: 0 0 0 70px;
+}
+
+.catalog-header {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px 0;
+  padding: 0;
+  max-width: 1060px;
+  height: 49px;
+}
+
+.catalog-selector {
+  padding: 14px 20px 14px 20px;
+  width: 292px;
+  height: 49px;
+  margin-left: auto;
+}
+
+.hotels-card-container {
+  width: 1060px;
+  margin: 0 auto;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.hotels-card-list {
+  list-style-type: none;
+  margin: 0 0 65px 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 18px;
+}
+
+
+.hotels-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 16px;
+  width: 340px;
+  height: 438px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  margin: 0;
+}
+
 
 .hotels-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: capitalize;
+  margin: 0;
 }
 
 .hotels-card-type {
+  display: inline;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   text-transform: capitalize;
+  margin-right: 20px;
 
 }
 
 .hotels-card-price {
+  display: inline;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   text-transform: capitalize;
+
+}
+
+.hotel-card-buttons {
+  display: flex;
+  margin: 0;
 }
 
 .hotel-card-button-brown {
@@ -335,36 +469,61 @@ body {
   border-radius: 4px;
   color: #FFFFFF;
   border: none;
-  width: 140px;
-  height: 36px;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 8px 26px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
 }
+
 
 .button-card {
   background: #82B3D3;
   border-radius: 4px;
   border: none;
   color: #FFFFFF;
-  width: 140px;
-  height: 36px;
+  padding: 8px 20px;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button-card-green {
   background-color: #7DB54F;
+  padding: 8px 18px;
+}
+
+.rating {
+  display: flex;
 }
 
 .rating-title {
-  text-align: center;
-  width: 140px;
-  height: 37px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
   background: #F2F2F2;
   border-radius: 4px;
   border: none;
+  padding: 9px 22px 8px 23px;
+  margin: 0;
+
+}
+
+.pagination-list {
+  list-style-type: none;
+  margin: 40px 0 60px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 400px;
+  min-height: 60px;
+  font-size: 20px;
 }
 
 .pagination-link {
@@ -380,13 +539,26 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
 }
 
 .pagination-link-gray {
   background-color: #F2F2F2;
   color: #000000;
+  padding: 12px 25px
 }
 
+.pagination-item:nth-child(6) .pagination-link {
+  padding: 12px 18px;
+}
+
+.pagination-dots {
+  display: flex;
+  padding: 16px 21px 17px 21px;
+  margin: 0;
+}
 
 .welcome {
   margin-bottom: 35px;
@@ -406,7 +578,7 @@ body {
   text-transform: uppercase;
   max-width: 620px;
   margin: 0 0 20px;
-
+  text-align: center;
 }
 
 .section-white .section-title {
@@ -447,15 +619,17 @@ body {
   max-width: 592px;
 
 }
+
 .section-subscribe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 96px 258px 104px 258px;
-  max-width: 1200px;
+  width: 1200px;
   min-height: 415px;
 }
+
 .section-subtitle {
   font-weight: 400;
   font-size: 22px;
@@ -482,14 +656,12 @@ body {
 }
 
 
-
 .advantage-subtitle {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
-
 
 
 .features-title {
@@ -557,7 +729,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 14px 215px 14px 20px;
+  padding: 14px 180px 14px 20px;
+
 }
 
 .subscribe-button {
@@ -585,7 +758,6 @@ body {
 }
 
 
-
 .footer-tel {
   font-weight: 400;
   font-size: 40px;
@@ -610,3 +782,13 @@ body {
   gap: 40px;
   background-color: #FFFFFF;
 }
+
+.breadcrumbs-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 8px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+

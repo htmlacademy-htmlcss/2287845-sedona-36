@@ -12,21 +12,22 @@
       <a class="main-logo" href="index.html">
         <img src="images/main-logo.svg" alt="Логотип сайта Седона" width="140" height="70">
       </a>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">О седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="buttons">
-        <div class="icons">
+      <div class="navigation-container">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="buttons">
+
           <a class="search" href="#" aria-label="Перейти в поиск">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -35,19 +36,20 @@
             </svg>
           </a>
           <a class="favorites" href="#" aria-label="Перейти в Избранное">
-            <img src="images/heart.svg" alt="Кнопка перейти в  Избранное">
+            <img class="favorites-img" src="images/heart.svg" alt="Кнопка перейти в  Избранное">
           </a>
+
+          <button class="button-header" type="button">
+            Хочу сюда!
+          </button>
         </div>
-        <button class="button-header" type="button">
-          Хочу сюда!
-        </button>
       </div>
     </header>
     <main class="main-inner main-container">
       <section class="filter-main">
         <div class="filter-header">
           <h1 class="filter-header-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
+          <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html" aria-label="Главная"></a>
               <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +66,7 @@
         </div>
         <form class="filter-form" action="#" method="get">
           <div class="filter">
-            <fieldset class="filter-fieldset">
+            <fieldset class="filter-fieldset optional">
               <legend class="filter-legend">Инфраструктура:</legend>
               <ul class="filter-fieldset-list">
                 <li class="filter-fieldset-item">
@@ -88,7 +90,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="filter-fieldset">
+            <fieldset class="filter-fieldset housing">
               <legend class="filter-legend">Тип жилья:</legend>
               <ul class="filter-fieldset-list">
                 <li class="filter-fieldset-item">
@@ -135,136 +137,185 @@
         </form>
       </section>
       <section class="catalog">
-        <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-        <select class="catalog-selector" aria-label="Сортировка">
-          <option class="catalog-cheap" value="cheap">Сначала дешевые</option>
-        </select>
-        <a href="#" class="button-view" aria-label="Показать мелкие карточки">
-          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_69108_52)">
-              <path d="M4 0H0V6H4V0Z" fill="black"/>
-              <path d="M16 0H12V6H16V0Z" fill="black"/>
-              <path d="M10 0H6V6H10V0Z" fill="black"/>
-              <path d="M4 8H0V14H4V8Z" fill="black"/>
-              <path d="M16 8H12V14H16V8Z" fill="black"/>
-              <path d="M10 8H6V14H10V8Z" fill="black"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_69108_52">
-                <rect width="16" height="14" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <a href="#" class="button-view" aria-label="Показать крупные карточки">
-          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_69108_126)">
-              <path d="M16 12H0V14H16V12Z" fill="black"/>
-              <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_69108_126">
-                <rect width="16" height="14" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <a href="#" class="button-view" aria-label="Показать список карточек">
-          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_69108_89)">
-              <path d="M2 0H0V2H2V0Z" fill="black"/>
-              <path d="M16 0H4V2H16V0Z" fill="black"/>
-              <path d="M2 4H0V6H2V4Z" fill="black"/>
-              <path d="M16 4H4V6H16V4Z" fill="black"/>
-              <path d="M2 8H0V10H2V8Z" fill="black"/>
-              <path d="M16 8H4V10H16V8Z" fill="black"/>
-              <path d="M2 12H0V14H2V12Z" fill="black"/>
-              <path d="M16 12H4V14H16V12Z" fill="black"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_69108_89">
-                <rect width="16" height="14" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <div class="hotels-card">
-          <img src="images/hotel-1.jpg" alt="Гостиница Амара" width="300" height="212">
-          <h3 class="hotels-card-title">Amara Resort & Spa</h3>
-          <div class="texts">
-            <span class="hotels-card-type">Гостиница</span>
-            <span class="hotels-card-price">От 4000 ₽</span>
+        <div class="catalog-header">
+          <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+          <select class="catalog-selector" aria-label="Сортировка">
+            <option class="catalog-cheap" value="cheap">Сначала дешевые</option>
+          </select>
+          <div class="catalog-sorting">
+            <a href="#" class="button-view" aria-label="Показать мелкие карточки">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_69108_52)">
+                  <path d="M4 0H0V6H4V0Z" fill="black"/>
+                  <path d="M16 0H12V6H16V0Z" fill="black"/>
+                  <path d="M10 0H6V6H10V0Z" fill="black"/>
+                  <path d="M4 8H0V14H4V8Z" fill="black"/>
+                  <path d="M16 8H12V14H16V8Z" fill="black"/>
+                  <path d="M10 8H6V14H10V8Z" fill="black"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_69108_52">
+                    <rect width="16" height="14" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="button-view" aria-label="Показать крупные карточки">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_69108_126)">
+                  <path d="M16 12H0V14H16V12Z" fill="black"/>
+                  <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_69108_126">
+                    <rect width="16" height="14" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="button-view" aria-label="Показать список карточек">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_69108_89)">
+                  <path d="M2 0H0V2H2V0Z" fill="black"/>
+                  <path d="M16 0H4V2H16V0Z" fill="black"/>
+                  <path d="M2 4H0V6H2V4Z" fill="black"/>
+                  <path d="M16 4H4V6H16V4Z" fill="black"/>
+                  <path d="M2 8H0V10H2V8Z" fill="black"/>
+                  <path d="M16 8H4V10H16V8Z" fill="black"/>
+                  <path d="M2 12H0V14H2V12Z" fill="black"/>
+                  <path d="M16 12H4V14H16V12Z" fill="black"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_69108_89">
+                    <rect width="16" height="14" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
           </div>
-          <div class="hotel-card-buttons">
-            <a href="#" class="hotel-card-button-brown">Подробнее</a>
-            <button class="button-card">В избранное</button>
-          </div>
-          <div class="rating">
-            <span class="rating-star"></span>
-            <span class="rating-star"></span>
-            <span class="rating-star"></span>
-            <span class="rating-star"></span>
-            <p class="rating-title">Рейтинг: 8,5</p>
-          </div>
+        </div>
+        <div class="hotels-card-container">
+          <ul class="hotels-card-list">
+            <li class="hotels-card-item">
+              <div class="hotels-card">
+                <img class="card-img" src="images/hotel-1.jpg" alt="Гостиница Амара" width="300" height="212">
+                <h3 class="hotels-card-title">Amara Resort & Spa</h3>
+                <div class="texts">
+                  <span class="hotels-card-type">Гостиница</span>
+                  <span class="hotels-card-price">От 4000 ₽</span>
+                </div>
+                <div class="hotel-card-buttons">
+                  <a href="#" class="hotel-card-button-brown">Подробнее</a>
+                  <button class="button-card">В избранное</button>
+                </div>
+                <div class="rating">
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <p class="rating-title">Рейтинг: 8,5</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="hotels-card-item">
+              <div class="hotels-card">
+                <img class="card-img" src="images/hotel-2.jpg" alt="Гостиница Виллас" width="300" height="212">
+                <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
+                <div class="texts">
+                  <span class="hotels-card-type">Гостиница</span>
+                  <span class="hotels-card-price">От 5000 ₽</span>
+                </div>
+                <div class="hotel-card-buttons">
+                  <a href="#" class="hotel-card-button-brown">Подробнее</a>
+                  <button class="button-card button-card-green">В избранном</button>
+                </div>
+                <div class="rating">
+                 <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <p class="rating-title">Рейтинг: 9,2</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="hotels-card-item">
+              <div class="hotels-card">
+                <img class="card-img" src="images/hotel-3.jpg" alt="Гостиница Десерт Куаил Инн" width="300"
+                     height="212">
+                <h3 class="hotels-card-title">Desert Quail Inn</h3>
+                <div class="texts">
+                  <span class="hotels-card-type">Гостиница</span>
+                  <span class="hotels-card-price">От 2500 ₽</span>
+                </div>
+                <div class="hotel-card-buttons">
+                  <a href="#" class="hotel-card-button-brown">Подробнее</a>
+                  <button class="button-card">В избранное</button>
+                </div>
+                <div class="rating">
+                 <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <p class="rating-title">Рейтинг: 6,9</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="hotels-card-item">
+              <div class="hotels-card">
+                <img class="card-img" src="images/hotel-4.jpg" alt="Гостиница Грин Три инн" width="300" height="212">
+                <h3 class="hotels-card-title">GreenTree Inn</h3>
+                <div class="texts">
+                  <span class="hotels-card-type">Гостиница</span>
+                  <span class="hotels-card-price">От 1500 ₽</span>
+                </div>
+                <div class="hotel-card-buttons">
+                  <a href="#" class="hotel-card-button-brown">Подробнее</a>
+                  <button class="button-card">В избранное</button>
+                </div>
+                <div class="rating">
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  <p class="rating-title">Рейтинг: 5,0</p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
 
         </div>
-        <div class="hotels-card">
-          <img src="images/hotel-2.jpg" alt="Гостиница Виллас" width="300" height="212">
-          <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
-          <div class="texts">
-            <span class="hotels-card-type">Гостиница</span>
-            <span class="hotels-card-price">От 5000 ₽</span>
-          </div>
-          <div class="hotel-card-buttons">
-            <a href="#" class="hotel-card-button-brown">Подробнее</a>
-            <button class="button-card button-card-green">В избранном</button>
-          </div>
-          <div class="rating">
-            <span class="rating-star"></span>
-            <span class="rating-star"></span>
-            <span class="rating-star"></span>
-            <span class="rating-star"></span>
-            <p class="rating-title">Рейтинг: 9,2</p>
-          </div>
 
-        </div>
-        <div class="hotels-card">
-          <img src="images/hotel-3.jpg" alt="Гостиница Десерт Куаил Инн" width="300" height="212">
-          <h3 class="hotels-card-title">Desert Quail Inn</h3>
-          <div class="texts">
-            <span class="hotels-card-type">Гостиница</span>
-            <span class="hotels-card-price">От 2500 ₽</span>
-          </div>
-          <div class="hotel-card-buttons">
-            <a href="#" class="hotel-card-button-brown">Подробнее</a>
-            <button class="button-card">В избранное</button>
-          </div>
-          <div class="rating">
-            <span class="rating-star"></span>
-            <span class="rating-star"></span>
-            <span class="rating-star"></span>
-            <p class="rating-title">Рейтинг: 6,9</p>
-          </div>
-
-        </div>
-        <div class="hotels-card">
-          <img src="images/hotel-4.jpg" alt="Гостиница Грин Три инн" width="300" height="212">
-          <h3 class="hotels-card-title">GreenTree Inn</h3>
-          <div class="texts">
-            <span class="hotels-card-type">Гостиница</span>
-            <span class="hotels-card-price">От 1500 ₽</span>
-          </div>
-          <div class="hotel-card-buttons">
-            <a href="#" class="hotel-card-button-brown">Подробнее</a>
-            <button class="button-card">В избранное</button>
-          </div>
-          <div class="rating">
-            <span class="rating-star"></span>
-            <span class="rating-star"></span>
-            <p class="rating-title">Рейтинг: 5,0</p>
-          </div>
-
-        </div>
         <ol class="pagination-list">
           <li class="pagination-item">
             <a href="#" class="pagination-link pagination-link-gray">1</a>
