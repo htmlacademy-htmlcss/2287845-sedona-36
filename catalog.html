@@ -10,7 +10,7 @@
   <div class="container-content">
     <header class="page-header">
       <a class="main-logo" href="index.html">
-        <img src="images/main-logo.svg" alt="Логотип сайта Седона" width="140" height="70">
+        <img class="logo-img" src="images/main-logo.svg" alt="Логотип сайта Седона" width="140" height="70">
       </a>
       <div class="navigation-container">
         <nav class="navigation">
@@ -21,21 +21,21 @@
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">О седоне</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-active">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
         <div class="buttons">
 
-          <a class="search" href="#" aria-label="Перейти в поиск">
+          <a class="buttons-item" href="#" aria-label="Перейти в поиск">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
                 fill="black"/>
             </svg>
           </a>
-          <a class="favorites" href="#" aria-label="Перейти в Избранное">
+          <a class="buttons-item" href="#" aria-label="Перейти в Избранное">
             <img class="favorites-img" src="images/heart.svg" alt="Кнопка перейти в  Избранное">
           </a>
 
@@ -65,26 +65,29 @@
           </ul>
         </div>
         <form class="filter-form" action="#" method="get">
-          <div class="filter">
+          <div class="filter-left">
             <fieldset class="filter-fieldset optional">
               <legend class="filter-legend">Инфраструктура:</legend>
               <ul class="filter-fieldset-list">
                 <li class="filter-fieldset-item">
-                  <label class="filter-checkbox">
-                    <input type="checkbox" class="control" name="pool" checked>
-                    <span class="filter-fieldset-span">Бассейн</span>
+                  <label class="filter-checkbox" for="pool">
+                    <input type="checkbox" class="control" id="pool" name="pool" checked>
+                    <span class="filter-fieldset-span"></span>
+                    Бассейн
                   </label>
                 </li>
                 <li class="filter-fieldset-item">
                   <label class="filter-checkbox">
                     <input type="checkbox" class="control" name="parking" checked>
-                    <span class="filter-fieldset-span">Парковка</span>
+                    <span class="filter-fieldset-span"></span>
+                    Парковка
                   </label>
                 </li>
                 <li class="filter-fieldset-item">
                   <label class="filter-checkbox">
                     <input type="checkbox" class="control" name="wifi">
-                    <span class="filter-fieldset-span">Wi-Fi</span>
+                    <span class="filter-fieldset-span"></span>
+                    Wi-Fi
                   </label>
                 </li>
               </ul>
@@ -96,36 +99,39 @@
                 <li class="filter-fieldset-item">
                   <label class="filter-radio">
                     <input type="radio" class="control" name="housing" value="#" checked>
-                    <span class="filter-fieldset-span">Гостиница</span>
+                    <span class="filter-fieldset-span"></span>
+                    Гостиница
                   </label>
                 </li>
                 <li class="filter-fieldset-item">
                   <label class="filter-radio">
                     <input type="radio" class="control" name="housing" value="#">
-                    <span class="filter-fieldset-span">Мотель</span>
+                    <span class="filter-fieldset-span"></span>
+                    Мотель
                   </label>
                 </li>
                 <li class="filter-fieldset-item">
                   <label class="filter-radio">
                     <input type="radio" class="control" name="housing" value="#">
-                    <span class="filter-fieldset-span">Апартаменты</span>
+                    <span class="filter-fieldset-span"></span>
+                    Апартаменты
                   </label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="filter-price">
-            <h4 class="filter-price-title">Стоимость, ₽:</h4>
-            <div class="price">
+          <div class="filter-right">
+            <div class="filter-price-wrapper">
+              <h4 class="filter-price-title">Стоимость, ₽:</h4>
               <label class="min-price">
-                <span class="filter-price-span">от</span>
                 <input class="filter-price-input" type="text" name="min-price" value="0">
+                <span class="filter-price-span">от</span>
               </label>
               <label class="max-price">
-                <span class="filter-price-span">до</span>
                 <input class="filter-price-input" type="text" name="max-price" value="9000">
+                <span class="filter-price-span">до</span>
               </label>
-              <div class="range">
+              <div class="filter-buttons">
                 <button class="button-range"></button>
                 <div class="range"></div>
                 <button class="button-range"></button>
@@ -209,18 +215,20 @@
                   <button class="button-card">В избранное</button>
                 </div>
                 <div class="rating">
+                  <div class="rating-star-wrapper">
                   <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
-                  <span class="rating-star">
+                    <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
-                  <span class="rating-star">
+                    <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
-                  <span class="rating-star">
+                    <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
+                  </div>
                   <p class="rating-title">Рейтинг: 8,5</p>
                 </div>
               </div>
@@ -239,18 +247,20 @@
                   <button class="button-card button-card-green">В избранном</button>
                 </div>
                 <div class="rating">
-                 <span class="rating-star">
-                    <img src="images/star.svg" alt="#">
-                  </span>
+                  <div class="rating-star-wrapper">
                   <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
-                  <span class="rating-star">
+                    <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
-                  <span class="rating-star">
+                    <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
+                    <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  </div>
                   <p class="rating-title">Рейтинг: 9,2</p>
                 </div>
 
@@ -271,15 +281,17 @@
                   <button class="button-card">В избранное</button>
                 </div>
                 <div class="rating">
-                 <span class="rating-star">
-                    <img src="images/star.svg" alt="#">
-                  </span>
+                  <div class="rating-star-wrapper">
                   <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
-                  <span class="rating-star">
+                    <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
+                    <span class="rating-star">
+                    <img src="images/star.svg" alt="#">
+                  </span>
+                  </div>
                   <p class="rating-title">Рейтинг: 6,9</p>
                 </div>
 
@@ -299,12 +311,14 @@
                   <button class="button-card">В избранное</button>
                 </div>
                 <div class="rating">
+                  <div class="rating-star-wrapper">
                   <span class="rating-star">
                     <img src="images/star.svg" alt="#">
                   </span>
-                  <span class="rating-star">
+                    <span class="rating-star">
                     <img src="images/star.svg" alt="#">
-                  </span>
+                    </span>
+                  </div>
                   <p class="rating-title">Рейтинг: 5,0</p>
                 </div>
 
