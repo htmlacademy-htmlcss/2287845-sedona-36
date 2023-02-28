@@ -369,6 +369,7 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   padding: 0;
+  margin: 0;
 }
 
 .min-price {
@@ -668,7 +669,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   max-width: 620px;
-  margin: 0 0 20px;
+  margin: 0;
   text-align: center;
 }
 
@@ -726,7 +727,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 0 0 54px;
+  margin: 0;
 }
 
 .subscribe-form {
@@ -744,6 +745,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+  margin: 0;
 }
 
 
@@ -752,6 +754,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
 }
 
 
@@ -774,6 +777,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
 }
 
 .features-item-gray {
