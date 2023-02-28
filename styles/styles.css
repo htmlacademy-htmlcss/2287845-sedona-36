@@ -842,17 +842,17 @@ body {
 }
 
 .social-list {
-  list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  list-style-type: none;
   align-items: center;
-  padding: 0;
-  width: 142px;
-  height: 40px;
-  margin: 45px 42px 35px 70px;
 }
 
+.social-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .footer-tel {
   font-weight: 400;
