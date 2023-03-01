@@ -36,7 +36,9 @@
           </a>
           <a class="buttons-item" href="#" aria-label="Перейти в Избранное">
             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.2928 19C9.99282 19 9.69282 18.9 9.49282 18.6C4.09282 12.5 2.79282 11.1 2.49282 10.7C1.79282 9.8 1.39282 8.6 1.39282 7.4C1.39282 4.4 3.79282 2 6.89282 2C8.19282 2 9.39282 2.5 10.3928 3.3C11.3928 2.5 12.6928 2 13.8928 2C16.8928 2 19.3928 4.4 19.3928 7.4C19.3928 8.7 18.8928 9.9 18.0928 10.8L11.0928 18.7C10.8928 18.9 10.6928 19 10.2928 19ZM4.29282 9.5C4.59282 9.9 7.79282 13.5 10.3928 16.4L16.5928 9.4C17.0928 8.9 17.2928 8.2 17.2928 7.4C17.2928 5.6 15.7928 4.1 13.9928 4.1C12.9928 4.1 11.9928 4.6 11.2928 5.4C10.9928 5.7 10.6928 5.8 10.3928 5.8C10.0928 5.8 9.79282 5.6 9.59282 5.4C8.89282 4.6 7.89282 4.1 6.89282 4.1C5.09282 4.1 3.59282 5.6 3.59282 7.4C3.49282 8.3 3.89282 9 4.29282 9.5C4.19282 9.5 4.19282 9.5 4.29282 9.5Z" fill="black"/>
+              <path
+                d="M10.2928 19C9.99282 19 9.69282 18.9 9.49282 18.6C4.09282 12.5 2.79282 11.1 2.49282 10.7C1.79282 9.8 1.39282 8.6 1.39282 7.4C1.39282 4.4 3.79282 2 6.89282 2C8.19282 2 9.39282 2.5 10.3928 3.3C11.3928 2.5 12.6928 2 13.8928 2C16.8928 2 19.3928 4.4 19.3928 7.4C19.3928 8.7 18.8928 9.9 18.0928 10.8L11.0928 18.7C10.8928 18.9 10.6928 19 10.2928 19ZM4.29282 9.5C4.59282 9.9 7.79282 13.5 10.3928 16.4L16.5928 9.4C17.0928 8.9 17.2928 8.2 17.2928 7.4C17.2928 5.6 15.7928 4.1 13.9928 4.1C12.9928 4.1 11.9928 4.6 11.2928 5.4C10.9928 5.7 10.6928 5.8 10.3928 5.8C10.0928 5.8 9.79282 5.6 9.59282 5.4C8.89282 4.6 7.89282 4.1 6.89282 4.1C5.09282 4.1 3.59282 5.6 3.59282 7.4C3.49282 8.3 3.89282 9 4.29282 9.5C4.19282 9.5 4.19282 9.5 4.29282 9.5Z"
+                fill="black"/>
             </svg>
 
           </a>
@@ -48,157 +50,167 @@
     </header>
     <main class="main-inner main-container">
       <section class="filter-main">
-        <div class="filter-header">
-          <h1 class="filter-header-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html" aria-label="Главная"></a>
-              <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                  fill="white"/>
-                <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
-              </svg>
-            </li>
-            <li class="breadcrumbs-item">
-              <span class="filter-span">Гостиницы</span>
-            </li>
-          </ul>
-        </div>
-        <form class="filter-form" action="#" method="get">
-          <div class="filter-left">
-            <fieldset class="filter-fieldset optional">
-              <legend class="filter-legend">Инфраструктура:</legend>
-              <ul class="filter-fieldset-list">
-                <li class="filter-fieldset-item">
-                  <label class="filter-checkbox" for="pool">
-                    <input type="checkbox" class="control" id="pool" name="pool" checked>
-                    <span class="filter-fieldset-span"></span>
-                    Бассейн
-                  </label>
-                </li>
-                <li class="filter-fieldset-item">
-                  <label class="filter-checkbox">
-                    <input type="checkbox" class="control" name="parking" checked>
-                    <span class="filter-fieldset-span"></span>
-                    Парковка
-                  </label>
-                </li>
-                <li class="filter-fieldset-item">
-                  <label class="filter-checkbox">
-                    <input type="checkbox" class="control" name="wifi">
-                    <span class="filter-fieldset-span"></span>
-                    Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+        <div class="filter-content">
+          <div class="filter-header">
+            <h1 class="filter-header-title">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html" aria-label="Главная"></a>
+                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                    fill="white"/>
+                  <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
+                </svg>
+              </li>
+              <li class="breadcrumbs-item">
+                <span class="filter-span">Гостиницы</span>
+              </li>
+            </ul>
+          </div>
+          <form class="filter-form" action="#" method="get">
+            <div class="filter-left">
+              <fieldset class="filter-fieldset optional">
+                <legend class="filter-legend">Инфраструктура:</legend>
+                <ul class="filter-fieldset-list">
+                  <li class="filter-fieldset-item">
+                    <label class="filter-checkbox" for="pool">
+                      <input type="checkbox" class="control" id="pool" name="pool" checked>
+                      <span class="filter-fieldset-span"></span>
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="filter-fieldset-item">
+                    <label class="filter-checkbox">
+                      <input type="checkbox" class="control" name="parking" checked>
+                      <span class="filter-fieldset-span"></span>
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="filter-fieldset-item">
+                    <label class="filter-checkbox">
+                      <input type="checkbox" class="control" name="wifi">
+                      <span class="filter-fieldset-span"></span>
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filter-fieldset housing">
-              <legend class="filter-legend">Тип жилья:</legend>
-              <ul class="filter-fieldset-list">
-                <li class="filter-fieldset-item">
-                  <label class="filter-radio">
-                    <input type="radio" class="control" name="housing" value="#" checked>
-                    <span class="filter-fieldset-span"></span>
-                    Гостиница
-                  </label>
-                </li>
-                <li class="filter-fieldset-item">
-                  <label class="filter-radio">
-                    <input type="radio" class="control" name="housing" value="#">
-                    <span class="filter-fieldset-span"></span>
-                    Мотель
-                  </label>
-                </li>
-                <li class="filter-fieldset-item">
-                  <label class="filter-radio">
-                    <input type="radio" class="control" name="housing" value="#">
-                    <span class="filter-fieldset-span"></span>
-                    Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="filter-right">
-            <div class="filter-price-wrapper">
-              <h4 class="filter-price-title">Стоимость, ₽:</h4>
-              <label class="min-price">
-                <input class="filter-price-input" type="text" name="min-price" value="0">
-                <span class="filter-price-span">от</span>
-              </label>
-              <label class="max-price">
-                <input class="filter-price-input" type="text" name="max-price" value="9000">
-                <span class="filter-price-span">до</span>
-              </label>
-              <div class="filter-buttons">
-                <button class="button-range"></button>
-                <div class="range"></div>
-                <button class="button-range"></button>
-              </div>
-              <button class="filter-button filter-button-apply" type="submit">Применить</button>
-              <button class="filter-button filter-button-reset" type="reset">Сбросить</button>
+              <fieldset class="filter-fieldset housing">
+                <legend class="filter-legend">Тип жилья:</legend>
+                <ul class="filter-fieldset-list">
+                  <li class="filter-fieldset-item">
+                    <label class="filter-radio">
+                      <input type="radio" class="control" name="housing" value="#" checked>
+                      <span class="filter-fieldset-span"></span>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="filter-fieldset-item">
+                    <label class="filter-radio">
+                      <input type="radio" class="control" name="housing" value="#">
+                      <span class="filter-fieldset-span"></span>
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="filter-fieldset-item">
+                    <label class="filter-radio">
+                      <input type="radio" class="control" name="housing" value="#">
+                      <span class="filter-fieldset-span"></span>
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
-          </div>
-        </form>
+            <div class="filter-right">
+              <div class="filter-price-wrapper">
+                <h4 class="filter-price-title">Стоимость, ₽:</h4>
+                <div class="filter-range">
+                  <label class="price">
+                    <input class="filter-price-input" type="number" name="min-price" placeholder="0">
+                    <span class="filter-price-span">от</span>
+                  </label>
+                  <label class="price">
+                    <input class="filter-price-input" type="number" name="max-price" placeholder="9000">
+                    <span class="filter-price-span">до</span>
+                  </label>
+                </div>
+                <div class="range-slider">
+                  <div class="range-inner-slider">
+                    <button class="range min" type="button"></button>
+                    <button class="range max" type="button"></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-buttons">
+                <button class="filter-button filter-button-apply" type="submit">Применить</button>
+                <button class="filter-button filter-button-reset" type="reset">Сбросить</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
       <section class="catalog">
         <div class="catalog-header">
           <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-          <select class="catalog-selector" aria-label="Сортировка">
-            <option class="catalog-cheap" value="cheap">Сначала дешевые</option>
-          </select>
           <div class="catalog-sorting">
-            <a href="#" class="button-view" aria-label="Показать мелкие карточки">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_69108_52)">
-                  <path d="M4 0H0V6H4V0Z" fill="black"/>
-                  <path d="M16 0H12V6H16V0Z" fill="black"/>
-                  <path d="M10 0H6V6H10V0Z" fill="black"/>
-                  <path d="M4 8H0V14H4V8Z" fill="black"/>
-                  <path d="M16 8H12V14H16V8Z" fill="black"/>
-                  <path d="M10 8H6V14H10V8Z" fill="black"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_69108_52">
-                    <rect width="16" height="14" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="#" class="button-view" aria-label="Показать крупные карточки">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_69108_126)">
-                  <path d="M16 12H0V14H16V12Z" fill="black"/>
-                  <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_69108_126">
-                    <rect width="16" height="14" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="#" class="button-view" aria-label="Показать список карточек">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_69108_89)">
-                  <path d="M2 0H0V2H2V0Z" fill="black"/>
-                  <path d="M16 0H4V2H16V0Z" fill="black"/>
-                  <path d="M2 4H0V6H2V4Z" fill="black"/>
-                  <path d="M16 4H4V6H16V4Z" fill="black"/>
-                  <path d="M2 8H0V10H2V8Z" fill="black"/>
-                  <path d="M16 8H4V10H16V8Z" fill="black"/>
-                  <path d="M2 12H0V14H2V12Z" fill="black"/>
-                  <path d="M16 12H4V14H16V12Z" fill="black"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_69108_89">
-                    <rect width="16" height="14" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
+            <select class="catalog-selector" aria-label="Сортировка">
+              <option class="catalog-cheap" value="cheap">Сначала дешевые</option>
+            </select>
+            <div class="catalog-view">
+              <a href="#" class="button-view" aria-label="Показать мелкие карточки">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_69108_52)">
+                    <path d="M4 0H0V6H4V0Z" fill="black"/>
+                    <path d="M16 0H12V6H16V0Z" fill="black"/>
+                    <path d="M10 0H6V6H10V0Z" fill="black"/>
+                    <path d="M4 8H0V14H4V8Z" fill="black"/>
+                    <path d="M16 8H12V14H16V8Z" fill="black"/>
+                    <path d="M10 8H6V14H10V8Z" fill="black"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_69108_52">
+                      <rect width="16" height="14" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" class="button-view" aria-label="Показать крупные карточки">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_69108_126)">
+                    <path d="M16 12H0V14H16V12Z" fill="black"/>
+                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_69108_126">
+                      <rect width="16" height="14" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" class="button-view" aria-label="Показать список карточек">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_69108_89)">
+                    <path d="M2 0H0V2H2V0Z" fill="black"/>
+                    <path d="M16 0H4V2H16V0Z" fill="black"/>
+                    <path d="M2 4H0V6H2V4Z" fill="black"/>
+                    <path d="M16 4H4V6H16V4Z" fill="black"/>
+                    <path d="M2 8H0V10H2V8Z" fill="black"/>
+                    <path d="M16 8H4V10H16V8Z" fill="black"/>
+                    <path d="M2 12H0V14H2V12Z" fill="black"/>
+                    <path d="M16 12H4V14H16V12Z" fill="black"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_69108_89">
+                      <rect width="16" height="14" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -360,21 +372,27 @@
       <li class="social-item">
         <a href="https://vk.com/htmlacademy" aria-label="Мы в ВКонтакте">
           <svg width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1164 14.8044C35.2824 14.2584 35.1164 13.8564 34.3214 13.8564H31.6964C31.0284 13.8564 30.7204 14.2034 30.5534 14.5864C30.5534 14.5864 29.2184 17.7824 27.3274 19.8584C26.7154 20.4604 26.4374 20.6514 26.1034 20.6514C25.9364 20.6514 25.6854 20.4604 25.6854 19.9134V14.8044C25.6854 14.1484 25.5014 13.8564 24.9454 13.8564H20.8174C20.4004 13.8564 20.1494 14.1604 20.1494 14.4494C20.1494 15.0704 21.0954 15.2144 21.1924 16.9624V20.7604C21.1924 21.5934 21.0394 21.7444 20.7054 21.7444C19.8154 21.7444 17.6504 18.5334 16.3654 14.8594C16.1164 14.1444 15.8644 13.8564 15.1934 13.8564H12.5664C11.8164 13.8564 11.6664 14.2034 11.6664 14.5864C11.6664 15.2684 12.5564 18.6564 15.8114 23.1374C17.9814 26.1974 21.0364 27.8564 23.8194 27.8564C25.4884 27.8564 25.6944 27.4884 25.6944 26.8534V24.5404C25.6944 23.8034 25.8524 23.6564 26.3814 23.6564C26.7714 23.6564 27.4384 23.8484 28.9964 25.3234C30.7764 27.0724 31.0694 27.8564 32.0714 27.8564H34.6964C35.4464 27.8564 35.8224 27.4884 35.6064 26.7604C35.3684 26.0364 34.5184 24.9854 33.3914 23.7384C32.7794 23.0284 31.8614 22.2634 31.5824 21.8804C31.1934 21.3894 31.3044 21.1704 31.5824 20.7334C31.5824 20.7334 34.7824 16.3074 35.1154 14.8044H35.1164Z" fill="#83B3D3"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M35.1164 14.8044C35.2824 14.2584 35.1164 13.8564 34.3214 13.8564H31.6964C31.0284 13.8564 30.7204 14.2034 30.5534 14.5864C30.5534 14.5864 29.2184 17.7824 27.3274 19.8584C26.7154 20.4604 26.4374 20.6514 26.1034 20.6514C25.9364 20.6514 25.6854 20.4604 25.6854 19.9134V14.8044C25.6854 14.1484 25.5014 13.8564 24.9454 13.8564H20.8174C20.4004 13.8564 20.1494 14.1604 20.1494 14.4494C20.1494 15.0704 21.0954 15.2144 21.1924 16.9624V20.7604C21.1924 21.5934 21.0394 21.7444 20.7054 21.7444C19.8154 21.7444 17.6504 18.5334 16.3654 14.8594C16.1164 14.1444 15.8644 13.8564 15.1934 13.8564H12.5664C11.8164 13.8564 11.6664 14.2034 11.6664 14.5864C11.6664 15.2684 12.5564 18.6564 15.8114 23.1374C17.9814 26.1974 21.0364 27.8564 23.8194 27.8564C25.4884 27.8564 25.6944 27.4884 25.6944 26.8534V24.5404C25.6944 23.8034 25.8524 23.6564 26.3814 23.6564C26.7714 23.6564 27.4384 23.8484 28.9964 25.3234C30.7764 27.0724 31.0694 27.8564 32.0714 27.8564H34.6964C35.4464 27.8564 35.8224 27.4884 35.6064 26.7604C35.3684 26.0364 34.5184 24.9854 33.3914 23.7384C32.7794 23.0284 31.8614 22.2634 31.5824 21.8804C31.1934 21.3894 31.3044 21.1704 31.5824 20.7334C31.5824 20.7334 34.7824 16.3074 35.1154 14.8044H35.1164Z"
+                  fill="#83B3D3"/>
           </svg>
         </a>
       </li>
       <li class="social-item">
         <a href="https://t.me/htmlacademy " aria-label="Мы в Телеграм">
           <svg width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M31.785 12.9557L15.8405 19.1042C14.7523 19.5413 14.7586 20.1483 15.6408 20.419L19.7344 21.696L29.2058 15.7201C29.6537 15.4477 30.0629 15.5942 29.7265 15.8928L22.0528 22.8183H22.051L22.0528 22.8192L21.7705 27.0387C22.1841 27.0387 22.3667 26.8489 22.5987 26.625L24.5871 24.6915L28.7229 27.7464C29.4855 28.1664 30.0332 27.9506 30.2229 27.0405L32.9379 14.2453C33.2158 13.1311 32.5126 12.6266 31.785 12.9557Z" fill="#83B3D3"/>
+            <path
+              d="M31.785 12.9557L15.8405 19.1042C14.7523 19.5413 14.7586 20.1483 15.6408 20.419L19.7344 21.696L29.2058 15.7201C29.6537 15.4477 30.0629 15.5942 29.7265 15.8928L22.0528 22.8183H22.051L22.0528 22.8192L21.7705 27.0387C22.1841 27.0387 22.3667 26.8489 22.5987 26.625L24.5871 24.6915L28.7229 27.7464C29.4855 28.1664 30.0332 27.9506 30.2229 27.0405L32.9379 14.2453C33.2158 13.1311 32.5126 12.6266 31.785 12.9557Z"
+              fill="#83B3D3"/>
           </svg>
         </a>
       </li>
       <li class="social-item">
         <a href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы в Ютуб">
           <svg width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M31.9402 12.3564H16.5074C14.6467 12.3564 13.3333 13.9502 13.3333 15.7564V25.8502C13.3333 27.7627 14.6467 29.3564 16.5074 29.3564H32.1591C33.8009 29.3564 35.3333 27.7627 35.3333 25.9564V15.7564C35.1143 13.9502 33.8009 12.3564 31.9402 12.3564ZM20.9949 24.8939V16.8189L28.3283 20.8564L20.9949 24.8939Z" fill="#83B3D3"/>
+            <path
+              d="M31.9402 12.3564H16.5074C14.6467 12.3564 13.3333 13.9502 13.3333 15.7564V25.8502C13.3333 27.7627 14.6467 29.3564 16.5074 29.3564H32.1591C33.8009 29.3564 35.3333 27.7627 35.3333 25.9564V15.7564C35.1143 13.9502 33.8009 12.3564 31.9402 12.3564ZM20.9949 24.8939V16.8189L28.3283 20.8564L20.9949 24.8939Z"
+              fill="#83B3D3"/>
           </svg>
         </a>
       </li>
