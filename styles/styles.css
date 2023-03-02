@@ -260,7 +260,6 @@ body {
 
 .filter-left {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 0;
   gap: 70px;
@@ -386,7 +385,6 @@ body {
 
 .filter-right {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0;
@@ -403,13 +401,15 @@ body {
 
 .filter-range {
   display: flex;
-
+  gap: 2px;
 }
 
 .price {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 0;
+  position: relative;
 }
 
 
@@ -435,8 +435,22 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #fff;
   opacity: 0.3;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.filter-price-span-from {
+  position: absolute;
+  top: 2px;
+  right: 20px;
+
+}
+
+.filter-price-span-to {
+  position: absolute;
+  top: 2px;
+  right: 20px;
 }
 
 .filter-button {
@@ -460,9 +474,15 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 260px;
-  background-color: transparent;
   width: 144px;
   color: #ffffff;
+  background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #ffffff;
+}
+
+.filter-price-input-max {
+  border-radius: 0 4px 4px 0;
 }
 
 .filter-button-apply {

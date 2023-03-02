@@ -129,12 +129,12 @@
                 <h4 class="filter-price-title">Стоимость, ₽:</h4>
                 <div class="filter-range">
                   <label class="price">
-                    <input class="filter-price-input" type="number" name="min-price" placeholder="0">
-                    <span class="filter-price-span">от</span>
+                    <input class="filter-price-input" type="text" name="min-price" min="1">
+                    <span class="filter-price-span filter-price-span-from">от</span>
                   </label>
                   <label class="price">
-                    <input class="filter-price-input" type="number" name="max-price" placeholder="9000">
-                    <span class="filter-price-span">до</span>
+                    <input class="filter-price-input filter-price-input-max" type="text" name="max-price" max="99999">
+                    <span class="filter-price-span filter-price-span-to">до</span>
                   </label>
                 </div>
                 <div class="range-slider">
