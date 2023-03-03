@@ -161,7 +161,6 @@ body {
 }
 
 
-
 .features-list {
   list-style: none;
   display: flex;
@@ -308,8 +307,6 @@ body {
   padding: 0;
   gap: 32px;
 }
-
-
 
 
 .filter-fieldset-span {
@@ -784,7 +781,6 @@ body {
 }
 
 
-
 .section-white .section-title {
   color: #ffffff;
 }
@@ -816,7 +812,6 @@ body {
 }
 
 
-
 .section-subtitle {
   margin: 0;
   font-weight: 400;
@@ -828,7 +823,6 @@ body {
 }
 
 
-
 .section-subscribe {
   display: flex;
   flex-direction: column;
@@ -838,7 +832,6 @@ body {
   width: 1200px;
   min-height: 415px;
 }
-
 
 
 .subscribe-form {
@@ -988,7 +981,7 @@ body {
 
 .page-footer {
   background-color: #FFFFFF;
-  box-shadow : 0 -5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
   padding: 0 70px;
 }
 
