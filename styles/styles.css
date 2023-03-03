@@ -104,24 +104,25 @@ body {
 }
 
 .navigation-list {
-  width: 339px;
+  min-width: 339px;
   display: flex;
   margin: 0;
   padding: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
 
 .advantage-content {
-  max-width: 400px;
-  padding: 101px 85px;
+  min-width: 400px;
+  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
+
 
 .advantage-list {
   list-style: none;
@@ -132,11 +133,11 @@ body {
   text-align: center;
 }
 
+
 .advantage-item {
   background-color: rgba(131, 179, 211, 0.2);
   width: 100%;
   max-width: 400px;
-  padding: 112px 85px;
 }
 
 .advantage-item:first-child, .advantage-item:last-child {
@@ -151,7 +152,6 @@ body {
 
 .advantage-item:nth-child(even) {
   background-color: rgba(131, 179, 211, 0.12);
-  padding: 112px 85px;
   max-width: 400px;
 }
 
@@ -175,8 +175,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
   min-height: 385px;
-  padding: 15px 85px;
+  padding: 15px 15px;
   flex: 1;
 }
 
@@ -188,10 +190,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 304px;
-  gap: 10px;
-  width: 1200px;
-  height: 406px;
+  padding: 96px 0;
 }
 
 
@@ -230,12 +229,10 @@ body {
 
 .buttons {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  gap: 18px;
   margin: 0;
   padding: 0;
-  min-width: 268px;
   min-height: 64px;
 }
 
@@ -243,6 +240,7 @@ body {
 .buttons-item {
   padding: 22px 12px;
   display: flex;
+
 }
 
 
@@ -256,6 +254,10 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   padding: 8px 34px;
+}
+
+.xxx {
+  display: flex;
 }
 
 .filter-left {
@@ -752,11 +754,14 @@ body {
   background-repeat: no-repeat;
   background-color: #FFFFFF;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: -webkit-center;
   width: 100%;
   height: 485px;
+}
+
+
+.welcome-img {
+  padding: 51px 0 0 0;
 }
 
 
@@ -773,8 +778,11 @@ body {
 
 .rectangle {
   border-color: rgba(255, 255, 255, 0.3);
-
+  width: 60px;
+  height: 2px;
+  margin: 0;
 }
+
 
 
 .section-white .section-title {
@@ -796,6 +804,7 @@ body {
   align-items: center;
   gap: 25px;
   padding: 69px 0 69px 0;
+  margin-bottom: 21px;
 }
 
 .section-features {
@@ -830,13 +839,7 @@ body {
   min-height: 415px;
 }
 
-.section-subtitle {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  margin: 0;
-}
+
 
 .subscribe-form {
   display: flex;
@@ -853,7 +856,9 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+  text-transform: uppercase;
   margin: 0;
+  max-width: 175px;
 }
 
 
@@ -862,6 +867,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  max-width: 230px;
   margin: 0;
 }
 
@@ -886,6 +892,8 @@ body {
   line-height: 21px;
   text-align: center;
   margin: 0;
+  min-height: 63px;
+  max-width: 230px;
 }
 
 .features-item-gray {
@@ -921,7 +929,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 96px 258px 104px;
-  gap: 10px;
 }
 
 .subscribe-bg .section-subtitle {
@@ -936,8 +943,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 14px 180px 14px 20px;
-
+  padding: 14px 20px;
+  min-width: 452px;
 }
 
 .subscribe-button {
@@ -949,13 +956,15 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  min-width: 232px;
   padding: 8px 50px;
 }
 
 .social-list {
   display: flex;
   list-style-type: none;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .social-item {
@@ -976,19 +985,18 @@ body {
 
 }
 
-.footer-link {
-  margin: 48px 70px 38px 41px;
-}
 
 .page-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  gap: 40px;
   background-color: #FFFFFF;
   box-shadow : 0 -5px 15px rgba(0, 0, 0, 0.2);
+  padding: 0 70px;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 30px;
 }
 
 .breadcrumbs-list {
