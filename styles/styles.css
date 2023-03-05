@@ -379,6 +379,7 @@ body {
 .control {
   background-color: #ffffff;
   border-radius: 4px;
+  margin: 0;
 }
 
 
@@ -441,14 +442,14 @@ body {
 
 .filter-price-span-from {
   position: absolute;
-  top: 2px;
+  top: 12px;
   right: 20px;
 
 }
 
 .filter-price-span-to {
   position: absolute;
-  top: 2px;
+  top: 12px;
   right: 20px;
 }
 
@@ -474,10 +475,11 @@ body {
   align-items: center;
   gap: 260px;
   width: 144px;
-  color: #ffffff;
+  color: #000000;
   background-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: 2px solid #ffffff;
+  padding: 12px 20px;
 }
 
 .filter-price-input-max {
@@ -495,6 +497,8 @@ body {
   border: none;
   padding: 8px 57px;
 }
+
+
 
 .catalog-title {
   margin: 0;
@@ -829,8 +833,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 96px 258px 104px 258px;
-  width: 1200px;
-  min-height: 415px;
 }
 
 
