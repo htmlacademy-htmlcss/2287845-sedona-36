@@ -33,15 +33,15 @@
   overflow: hidden;
 }
 
-/*button {*/
-/*  border: 0;*/
-/*  background-color: initial;*/
-/*  cursor: pointer;*/
-/*  font-family: "Pt Sans", "Arial", sans-serif;*/
-/*  font-weight: 700;*/
-/*  font-size: 16px;*/
-/*  line-height: 20px;*/
-/*}*/
+.button {
+  border: 0;
+  background-color: initial;
+  cursor: pointer;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 img {
   max-width: 100%;
@@ -90,6 +90,8 @@ body {
   column-gap: 43px;
   align-items: center;
 }
+
+
 
 .main-logo {
   display: block;
@@ -192,6 +194,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 96px 0;
+  gap: 54px;
 }
 
 .offer .section {
@@ -202,6 +205,7 @@ body {
 
 .catalog {
   padding: 0 70px;
+  width: 100%;
 }
 
 .navigation-link {
@@ -259,10 +263,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 8px 28px;
+  padding: 8px 34px;
 }
 
-.xxx {
+.button-container {
   display: flex;
 }
 
@@ -278,7 +282,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
-  min-width: 1200px;
+  width: 100%;
   font-size: 18px;
   line-height: 21px;
   display: flex;
@@ -424,6 +428,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Pt Sans", "Arial", sans-serif;
   padding: 0;
   gap: 32px;
 }
@@ -497,12 +502,14 @@ body {
   background-color: #82B3D3;
   border-radius: 4px;
   border: none;
+  font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 .filter-button-reset {
   background: none;
   border: none;
   padding: 8px 57px;
+  font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 
@@ -578,7 +585,7 @@ body {
   margin: 0 0 40px 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 340px);
   column-gap: 20px;
 }
 
@@ -592,6 +599,7 @@ body {
   height: 438px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -611,7 +619,6 @@ body {
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  margin: 0;
 }
 
 
@@ -621,6 +628,7 @@ body {
   line-height: 28px;
   text-transform: capitalize;
   margin: 0;
+
 }
 
 .hotels-card-type {
@@ -678,6 +686,11 @@ body {
 .button-card-green {
   background-color: #7DB54F;
   padding: 8px 16px;
+  border: 0;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .rating {
@@ -719,6 +732,7 @@ body {
   min-width: 400px;
   min-height: 60px;
   font-size: 20px;
+  margin: 0 0 60px 0;
 
 }
 
