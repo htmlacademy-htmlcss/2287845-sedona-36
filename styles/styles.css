@@ -33,15 +33,15 @@
   overflow: hidden;
 }
 
-/*button {*/
-/*  border: 0;*/
-/*  background-color: initial;*/
-/*  cursor: pointer;*/
-/*  font-family: "Pt Sans", "Arial", sans-serif;*/
-/*  font-weight: 700;*/
-/*  font-size: 16px;*/
-/*  line-height: 20px;*/
-/*}*/
+.button {
+  border: 0;
+  background-color: initial;
+  cursor: pointer;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 img {
   max-width: 100%;
@@ -57,6 +57,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 
@@ -89,6 +90,8 @@ body {
   column-gap: 43px;
   align-items: center;
 }
+
+
 
 .main-logo {
   display: block;
@@ -191,6 +194,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 96px 0;
+  gap: 54px;
 }
 
 .offer .section {
@@ -201,6 +205,7 @@ body {
 
 .catalog {
   padding: 0 70px;
+  width: 100%;
 }
 
 .navigation-link {
@@ -258,10 +263,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 8px 28px;
+  padding: 8px 34px;
 }
 
-.xxx {
+.button-container {
   display: flex;
 }
 
@@ -277,7 +282,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #FFFFFF;
-  min-width: 1200px;
+  width: 100%;
   font-size: 18px;
   line-height: 21px;
   display: flex;
@@ -423,6 +428,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Pt Sans", "Arial", sans-serif;
   padding: 0;
   gap: 32px;
 }
@@ -496,12 +502,14 @@ body {
   background-color: #82B3D3;
   border-radius: 4px;
   border: none;
+  font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 .filter-button-reset {
   background: none;
   border: none;
   padding: 8px 57px;
+  font-family: "Pt Sans", "Arial", sans-serif;
 }
 
 
@@ -546,13 +554,12 @@ body {
 }
 
 .catalog-header {
-  width: 1060px;
-  margin: 0 auto 40px;
+  margin: 0 0 40px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
+  width: 100%;
 }
 
 .catalog-selector {
@@ -591,6 +598,7 @@ body {
   height: 438px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -610,7 +618,6 @@ body {
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  margin: 0;
 }
 
 
@@ -620,6 +627,7 @@ body {
   line-height: 28px;
   text-transform: capitalize;
   margin: 0;
+
 }
 
 .hotels-card-type {
@@ -666,7 +674,7 @@ body {
   border-radius: 4px;
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 8px 20px;
+  padding: 8px 19px;
   text-align: center;
   max-height: 36px;
   display: flex;
@@ -677,12 +685,16 @@ body {
 .button-card-green {
   background-color: #7DB54F;
   padding: 8px 16px;
+  border: 0;
+  font-family: "Pt Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .rating {
   display: flex;
   justify-content: space-between;
-  width: 300px;
 }
 
 .rating-star-wrapper {
@@ -718,6 +730,7 @@ body {
   min-width: 400px;
   min-height: 60px;
   font-size: 20px;
+  margin: 0 0 60px 0;
 
 }
 
@@ -766,12 +779,10 @@ body {
   width: 100%;
   min-height: 485px;
   margin: 0 0 69px 0;
-}
-
-
-.welcome-img {
   padding: 51px 0 0 0;
 }
+
+
 
 
 .section-title {
@@ -1001,6 +1012,7 @@ body {
 }
 
 .footer-tel {
+  font-family: "Pt Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -1008,7 +1020,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-
 }
 
 
@@ -1033,6 +1044,28 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  column-gap: 10px;
+}
+
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  column-gap: 10px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='21' viewBox='0 0 8 21' fill='none' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath d='M6.91526 9.96875L2.16526 5.71875C1.91526 5.46875 1.41526 5.46875 1.04026 5.71875C0.665263 5.96875 0.790263 6.46875 1.04026 6.71875L5.16526 10.4688L1.16526 14.2188C0.915263 14.4688 0.915263 14.9688 1.16526 15.2188C1.16526 15.3438 1.54026 15.4688 1.66526 15.4688C1.79026 15.4688 2.04026 15.3438 2.16526 15.2188L6.91526 10.9688C7.29026 10.7188 7.29026 10.2188 6.91526 9.96875Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 21px;
+}
+
+.breadcrumbs-link {
+  display: flex;
 }
 
 .logo-img {
