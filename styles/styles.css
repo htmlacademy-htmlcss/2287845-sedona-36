@@ -554,13 +554,12 @@ body {
 }
 
 .catalog-header {
-  width: 1060px;
-  margin: 0 auto 40px;
+  margin: 0 0 40px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
+  width: 100%;
 }
 
 .catalog-selector {
@@ -585,7 +584,7 @@ body {
   margin: 0 0 40px 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
 }
 
@@ -675,7 +674,7 @@ body {
   border-radius: 4px;
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 8px 20px;
+  padding: 8px 19px;
   text-align: center;
   max-height: 36px;
   display: flex;
@@ -696,7 +695,6 @@ body {
 .rating {
   display: flex;
   justify-content: space-between;
-  width: 300px;
 }
 
 .rating-star-wrapper {
@@ -781,12 +779,10 @@ body {
   width: 100%;
   min-height: 485px;
   margin: 0 0 69px 0;
-}
-
-
-.welcome-img {
   padding: 51px 0 0 0;
 }
+
+
 
 
 .section-title {
