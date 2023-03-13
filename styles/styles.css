@@ -1021,6 +1021,15 @@ body {
   max-width: 376px;
 }
 
+.offer-button:hover {
+  background-color: #615048;
+}
+
+.offer-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .subscribe {
   color: #000000;
   padding: 96px 0 104px 0;
@@ -1129,8 +1138,16 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-link {
-  fill:  #756157;
+.footer-svg {
+  fill: #000000;
+}
+
+.footer-svg:hover {
+  fill: #756157;
+}
+
+.footer-svg:active {
+  fill: rgba(117, 97, 87, 0.3);;
 }
 
 .page-footer {
