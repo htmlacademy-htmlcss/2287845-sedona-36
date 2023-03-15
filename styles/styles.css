@@ -413,16 +413,39 @@ body {
 }
 
 
-
 .filter-checkbox {
   position: relative;
   display: block;
   cursor: pointer;
   padding: 0 0 0 36px;
 }
-
-.control{
+.control {
   margin: 0;
+}
+
+.filter-checkbox:hover  .control-mark {
+  background-color: #D1DFEA;
+}
+
+.filter-checkbox:focus  .control-mark {
+  border: 3px solid #83B3D3;
+}
+
+.filter-checkbox:active .control-mark {
+  background-color: #A3BBD5;
+}
+
+.filter-checkbox:hover  .control-mark-radio {
+  background-color: #D1DFEA;
+}
+
+.filter-checkbox:focus  .control-mark-radio {
+  border: 3px solid #83B3D3;
+  border-radius: 18px;
+}
+
+.filter-checkbox:active .control-mark-radio {
+  background-color: #A3BBD5;
 }
 
 
