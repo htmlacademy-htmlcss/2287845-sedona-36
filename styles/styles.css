@@ -637,6 +637,11 @@ body {
   padding: 12px 20px;
 }
 
+/*@TODO нужно задать цвет placeholder для input */
+/*  .filter-price-input::placeholder {*/
+/*    color: #000000;*/
+/*  } */
+
 .filter-price-input-max {
   border-radius: 0 4px 4px 0;
 }
@@ -742,11 +747,14 @@ body {
 .catalog-selector {
   margin: 0;
   padding: 14px 131px 14px 20px;
+  /*TODO Паддинг с правой стороный очень большой, достаточно 40px*/
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  /*@TODO Добавь background-color: #FFFFFF;*/
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
+  /*@TODO Очень интересное решение с стрелкой, эту туду можно удалить, просто очень неординарно=) */
   appearance: none;
   font-weight: 400;
   font-size: 18px;
@@ -848,17 +856,15 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 26px;
+  padding: 8px; /*@TODO padding: 8px */
+  /*@TODO Добавь*/
+  /*width: 100%;*/
+  /*text-align: center;*/
 }
 
 .hotel-card-button-brown:hover,
 .hotel-card-button-brown:focus {
   background-color: #615048;
-}
-
-.hotel-card-button-brown:active {
-  background-color: #756157;
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-card {
@@ -867,12 +873,25 @@ body {
   border-radius: 4px;
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 8px 19px;
+  padding: 8px 8px; /*@TODO padding: 8px */
   text-align: center;
-  max-height: 36px;
+  /*max-height: 36px; @TODO Это вообще сродни преступлению max-height НИКОГДА не используй*/
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /*@TODO Удали ^^^*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+
+  /*@TODO Добавь*/
+  /*width: 100%;*/
+}
+
+.hotel-card-button-brown:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-card:hover,
@@ -888,12 +907,15 @@ body {
 
 .button-card-green {
   background-color: #7DB54F;
-  padding: 8px 16px;
+  padding: 8px 16px; /*@TODO padding: 8px */
   border: 0;
   font-family: "Pt Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  /*@TODO Добавь*/
+  /*width: 100%;*/
+  /*text-align: center;*/
 }
 
 .button-card-green:hover,
@@ -1427,7 +1449,17 @@ body {
   width: 100%;
   border-radius: 4px;
   padding: 15px 55px 15px 20px;
+
+  /*@TODO Добавь */
+  /*font-weight: 700;*/
 }
+
+/*@TODO нужно задать цвет placeholder для input */
+/*  .input-in::placeholder {*/
+/*    color: #000000;*/
+/*    font-weight: 700; */
+/*    Сделай так со всеми инпутами в модалке, приведи её к макетному виду, модальное окно вообще не похоже на макет  */
+/*  } */
 
 .input-calendar-in {
   position: absolute;
@@ -1600,6 +1632,7 @@ body {
 }
 
 .tooltip-info {
+  /* @TODO Не соответствует макету шрифт, смотри макет внимательно*/
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1625,8 +1658,13 @@ body {
   height: 9px;
   position: absolute;
   top: -9px;
+  /* @TODO bottom: 100%; тут вместо top */
   left: 50%;
   transform: translateX(-50%);
+
+  /*@TODO Добавь */
+  /*border: 9px solid transparent;*/
+  /*border-bottom: 9px solid #333333;*/
 }
 
 .amount-kids-container {
