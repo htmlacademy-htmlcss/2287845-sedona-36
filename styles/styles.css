@@ -265,7 +265,7 @@ body {
   width: 20px;
   height: 20px;
   top: 12px;
-  left: 18px;
+  left: 20px;
   color: #ffffff;
   background-color: #7DB54F;
   border-radius: 10px;
@@ -333,7 +333,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 40px;
+  gap: 44px;
   width: 1060px;
 }
 
@@ -538,7 +538,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 32px;
+  gap: 30px;
 }
 
 .filter-range {
@@ -624,13 +624,16 @@ body {
   position: absolute;
   top: 12px;
   right: 20px;
-
+  color: #000000;
+  opacity: 0.3;
 }
 
 .filter-price-span-to {
   position: absolute;
   top: 12px;
   right: 20px;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .filter-button {
@@ -762,7 +765,7 @@ body {
 }
 
 .catalog-header {
-  margin: 0 0 40px;
+  margin: 0 0 37px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -784,6 +787,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-family: "Pt Sans", "Arial", sans-serif;
+  min-width: 292px;
 }
 
 .catalog-view {
@@ -1353,7 +1357,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px 70px;
+  padding: 44px 70px 30px 70px;
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -1415,10 +1419,9 @@ body {
 }
 
 .modal-container {
-  width: 715px;
   min-height: 561px;
   margin: auto;
-  padding: 62px 70px 70px 70px;
+  padding: 64px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -1432,9 +1435,9 @@ body {
 
 .modal-input-container {
   display: grid;
-  grid-template-columns: repeat(2, 155px 133px);
-  grid-auto-rows: 155px 133px;
-  grid-template-rows: repeat(3, minmax(50px, max-content) minmax(40px, max-content)) minmax(60px, auto);
+  grid-template-columns: repeat(2, 158px 129px);
+  grid-auto-rows: 146px 132px;
+  grid-template-rows: repeat(3, minmax(19px, max-content) minmax(49px, max-content)) minmax(41px, auto);
 
 }
 
@@ -1463,6 +1466,8 @@ body {
   border-radius: 4px;
   padding: 15px 55px 15px 20px;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 
@@ -1518,6 +1523,9 @@ body {
   border: none;
   border-radius: 4px;
   padding: 15px 55px 15px 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .input-calendar-out {
@@ -1592,6 +1600,9 @@ body {
   border: none;
   border-radius: 4px;
   width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .label-kids {
@@ -1688,6 +1699,9 @@ body {
   border: none;
   border-radius: 4px;
   width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .modal-button-submit {
@@ -1703,7 +1717,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
-
+  min-height: 60px;
 }
 
 .modal-button-close {
@@ -1713,8 +1727,8 @@ body {
   width: 53px;
   height: 53px;
   border-radius: 50%;
-  top: 54px;
-  right: 70px;
+  top: 64px;
+  right: 57px;
   display: flex;
   align-items: center;
   justify-content: center;
