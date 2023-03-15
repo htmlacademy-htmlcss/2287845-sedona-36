@@ -77,21 +77,24 @@
                 <ul class="filter-fieldset-list">
                   <li class="filter-fieldset-item">
                     <label class="filter-checkbox" for="pool">
-                      <input type="checkbox" class="control" id="pool" name="pool" checked>
+                      <input class="control visually-hidden" type="checkbox" id="pool" name="pool" checked>
+                      <span class="control-mark"></span>
                       <span class="filter-fieldset-span"></span>
                       Бассейн
                     </label>
                   </li>
                   <li class="filter-fieldset-item">
                     <label class="filter-checkbox">
-                      <input type="checkbox" class="control" name="parking" checked>
+                      <input class="control visually-hidden" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
                       <span class="filter-fieldset-span"></span>
                       Парковка
                     </label>
                   </li>
                   <li class="filter-fieldset-item">
                     <label class="filter-checkbox">
-                      <input type="checkbox" class="control" name="wifi">
+                      <input class="control visually-hidden" type="checkbox" name="wifi">
+                      <span class="control-mark"></span>
                       <span class="filter-fieldset-span"></span>
                       Wi-Fi
                     </label>
@@ -103,22 +106,25 @@
                 <legend class="filter-legend">Тип жилья:</legend>
                 <ul class="filter-fieldset-list">
                   <li class="filter-fieldset-item">
-                    <label class="filter-radio">
+                    <label class="filter-checkbox">
                       <input type="radio" class="control" name="housing" value="#" checked>
+                      <span class="control-mark"></span>
                       <span class="filter-fieldset-span"></span>
                       Гостиница
                     </label>
                   </li>
                   <li class="filter-fieldset-item">
-                    <label class="filter-radio">
+                    <label class="filter-checkbox">
                       <input type="radio" class="control" name="housing" value="#">
+                      <span class="control-mark"></span>
                       <span class="filter-fieldset-span"></span>
                       Мотель
                     </label>
                   </li>
                   <li class="filter-fieldset-item">
-                    <label class="filter-radio">
+                    <label class="filter-checkbox">
                       <input type="radio" class="control" name="housing" value="#">
+                      <span class="control-mark"></span>
                       <span class="filter-fieldset-span"></span>
                       Апартаменты
                     </label>
@@ -140,10 +146,15 @@
                     <span class="filter-price-span filter-price-span-to">до</span>
                   </label>
                 </div>
+
                 <div class="range-slider">
                   <div class="range-inner-slider">
-                    <button class="button range-min" type="button"></button>
-                    <button class="button range-max" type="button"></button>
+                    <button class="range-toggle range-min" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                    <button class="range-toggle range-max" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
                   </div>
                 </div>
               </div>
