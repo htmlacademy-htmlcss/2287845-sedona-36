@@ -88,7 +88,6 @@ body {
   display: flex;
   padding: 0 70px;
   column-gap: 43px;
-  align-items: center;
 }
 
 
@@ -239,6 +238,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex: 1;
+  column-gap: 20px;
 }
 
 .buttons {
@@ -289,6 +289,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   padding: 8px 34px;
+  width: 160px;
 }
 
 .button-header:hover,
@@ -561,7 +562,7 @@ body {
   align-items: center;
   font-family: "Pt Sans", "Arial", sans-serif;
   padding: 0;
-  gap: 31px;
+  gap: 19px;
 }
 
 .filter-price-title {
@@ -650,6 +651,7 @@ body {
 }
 
 .filter-price-input {
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -664,10 +666,7 @@ body {
 
 .filter-price-input::placeholder {
   color: #000000;
-}
-
-.filter-price-input::placeholder {
-  color: #000000;
+  opacity: 1;
 }
 
 
@@ -698,7 +697,6 @@ body {
   font-family: "Pt Sans", "Arial", sans-serif;
   border: 3px solid transparent;
   border-radius: 4px;
-  margin-bottom: -11px;
 }
 
 .filter-button-reset:hover {
@@ -788,6 +786,7 @@ body {
   line-height: 21px;
   font-family: "Pt Sans", "Arial", sans-serif;
   min-width: 292px;
+  color: #333333;
 }
 
 .catalog-view {
@@ -838,6 +837,7 @@ body {
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  align-content: flex-start;
 }
 
 
@@ -856,6 +856,7 @@ body {
   line-height: 21px;
   color: #333333;
   text-transform: capitalize;
+  width: 50%;
 }
 
 .hotels-card-price {
@@ -869,7 +870,7 @@ body {
 .hotel-card-buttons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   width: 100%;
 }
@@ -1397,7 +1398,6 @@ body {
 
 .logo-img {
   position: absolute;
-  top: -1px;
   left: 0;
   z-index: 1;
 }
@@ -1419,14 +1419,34 @@ body {
 }
 
 .modal-container {
-  min-height: 561px;
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   position: relative;
+  width: 100%;
+  max-width: 717px;
 }
+
+.modal-form-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  column-gap: 18px;
+}
+
+.modal-form-first {
+  margin: 0 0 23px 0;
+}
+
+.modal-form-second {
+  margin: 0 0 23px 0;
+}
+
+.modal-form-third {
+  margin: 0 0 48px 0;
+}
+
 
 .hotel-modal-title {
   margin: 0 0 29px 0;
@@ -1434,26 +1454,19 @@ body {
 
 
 .modal-input-container {
-  display: grid;
-  grid-template-columns: repeat(2, 158px 129px);
-  grid-auto-rows: 146px 132px;
-  grid-template-rows: repeat(3, minmax(19px, max-content) minmax(49px, max-content)) minmax(41px, auto);
-
+  display: flex;
+  flex-direction: column;
 }
 
 .label-in {
-  grid-column: 1 / 2;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
   align-self: center;
-  padding-top: 5px;
   line-height: 24px;
-
 }
 
 .input-in-container {
-  grid-column: 2 / -1;
   position: relative;
   align-self: center;
   height: fit-content;
@@ -1472,8 +1485,13 @@ body {
 
 
 .input-in::placeholder {
-  color: #000000;
+  font-family: inherit;
+  font-style: normal;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 1;
 }
 
 
@@ -1490,28 +1508,27 @@ body {
 }
 
 .error-date {
-  grid-column: 2 / 4;
+  grid-column: 2/-1;
   color: rgba(255, 87, 87, 1);
-  align-self: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  text-align: center;
+  text-align: left;
+  padding: 0 20px;
+  font-family: inherit;
 }
 
 .label-out {
-  grid-column: 1 / 2;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
   align-self: center;
-  padding-top: 4px;
   line-height: 24px;
-
+  font-family: inherit;
+  font-style: normal;
 }
 
 .input-out-container {
-  grid-column: 2 / -1;
   position: relative;
   align-self: center;
   height: fit-content;
@@ -1528,11 +1545,20 @@ body {
   line-height: 24px;
 }
 
+.input-out::placeholder {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 1;
+}
+
 .input-calendar-out {
   position: absolute;
   top: 21px;
   right: 20px;
-
   border: none;
   padding: 0;
   width: 15px;
@@ -1541,16 +1567,16 @@ body {
 }
 
 .warning-date {
-  grid-column: 2 / -1;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  align-self: center;
   font-weight: 400;
+  text-align: left;
+  grid-column: 2 / -1;
+  padding: 0 20px;
 }
 
 .label-adults {
-  grid-column: 1 / 2;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
@@ -1559,16 +1585,22 @@ body {
 }
 
 .amount-adults-container {
-  grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.amount-adults-input {
+  width: 110px;
+  height: 48px;
   position: relative;
-  align-self: center;
-  height: fit-content;
 }
 
 .amount-remove {
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 14px;
+  left: 7px;
   width: 25px;
   height: 25px;
   padding: 0;
@@ -1583,7 +1615,7 @@ body {
 .amount-add {
   position: absolute;
   top: 13px;
-  right: 13px;
+  right: 5px;
   width: 25px;
   height: 25px;
   padding: 0;
@@ -1594,6 +1626,7 @@ body {
   align-items: center;
   cursor: pointer;
 }
+
 
 .amount-adults {
   background-color: #F2F2F2;
@@ -1606,18 +1639,19 @@ body {
 }
 
 .label-kids {
-  grid-column: 3 / 4;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  align-self: center;
-  justify-self: center;
-  padding-left: 6px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding-left: 3px;
+  font-family: inherit;
+  font-style: normal;
 }
 
 .tooltip-container {
-  grid-column: 3 / 4;
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
@@ -1629,26 +1663,22 @@ body {
 }
 
 .button-tooltip {
-  position: absolute;
   width: 25px;
   height: 25px;
-  left: -45px;
-  top: 15px;
-
   border-radius: 50%;
   border: none;
   padding: 0;
   background-color: #83B3D3;
   cursor: pointer;
-
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .button-tooltip::before {
   content: '';
-
   height: 9px;
   width: 1px;
 }
@@ -1666,12 +1696,11 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   width: 256px;
-  /*display: block;*/
   display: none;
-  padding: 15px 18px 18px 22px;
+  padding: 21px 18px 18px 22px;
   position: absolute;
   top: 40px;
-  left: 50%;
+  left: 59%;
   transform: translateX(-50%);
 }
 
@@ -1688,10 +1717,11 @@ body {
 }
 
 .amount-kids-container {
-  grid-column: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 46px;
   position: relative;
-  align-self: center;
-  height: fit-content;
 }
 
 .amount-kids {
@@ -1704,21 +1734,26 @@ body {
   line-height: 20px;
 }
 
+
+.amount-kids-input {
+  position: relative;
+  width: 110px;
+  flex-shrink: 0;
+}
+
 .modal-button-submit {
-  grid-column: 1 / -1;
-  grid-row: -2 / -1;
   border: none;
   border-radius: 10px;
   background-color: #83B3D3;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  padding: 0;
+  padding: 12px 77px;
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
-  min-height: 60px;
 }
+
 
 .modal-button-close {
   position: absolute;
@@ -1728,7 +1763,7 @@ body {
   height: 53px;
   border-radius: 50%;
   top: 64px;
-  right: 57px;
+  right: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1768,10 +1803,11 @@ body {
 
 .modal-title {
   text-transform: uppercase;
-  margin: 0 0 61px 0;
+  margin: 0 0 64px 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  max-width: calc(100% - 53px);
 }
 
 .amount-remove svg,
@@ -1819,17 +1855,29 @@ body {
 .modal-input-container input {
   font-size: 18px;
   line-height: 21px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+
 }
 
 .modal-input-container input::placeholder {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  opacity: 1;
 }
 
 .modal-input-container input:disabled {
   color: rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.modal-form-multi-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 81px;
+  justify-content: space-between;
 }
 
 .amount-adults::-webkit-inner-spin-button,
