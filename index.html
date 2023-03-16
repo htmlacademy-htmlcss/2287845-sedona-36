@@ -337,6 +337,7 @@
           <label class="label-kids" for="kids">
             <span>Дети:</span>
             <button class="button-tooltip" type="button" aria-labelledby="tooltip-label">
+<!--              @TODO button  не может быть ребенком label, не проходит валидацию, сделай вместо button div-->
               <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
               </svg>
@@ -344,6 +345,7 @@
             </button>
           </label>
           <div class="amount-kids-container">
+<!--            @TODO смени класс ^^^ на amount-kids-input-->
             <button class="amount-remove" type="button">
               <span class="visually-hidden">Добавить</span>
               <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
