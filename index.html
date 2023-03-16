@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -57,8 +58,7 @@
     <main class="main-index">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <section class="welcome">
-        <img src="images/welcome-to-sedona.svg" alt="Добро пожаловать в седону" width="458"
-             height="352">
+        <img src="images/welcome-to-sedona.svg" alt="Добро пожаловать в седону" width="458" height="352">
       </section>
       <section class="advantage">
         <div class="section-advantage">
@@ -73,8 +73,7 @@
               <p class="advantage-subtitle advantage-subtitle-white">Седона — не аттракцион для туристов, там течёт своя
                 жизнь</p>
             </div>
-            <img class="advantage-img" src="images/photo-1.jpg" alt="Изображение настоящего городка" width="800"
-                 height="384">
+            <img class="advantage-img" src="images/photo-1.jpg" alt="Изображение настоящего городка" width="800" height="384">
           </li>
           <li class="advantage-item">
             <div class="advantage-content">
@@ -116,17 +115,17 @@
         </div>
         <ul class="features-list">
           <li class="features-item">
-            <img class="features-img" src="images/advantage-icon-house.svg" alt="Изображение Жилья">
+            <img class="features-img" src="images/advantage-icon-house.svg" alt="Изображение Жилья" width="77" height="72">
             <h3 class="features-title">Жильё</h3>
             <p class="features-subtitle">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
           <li class="features-item">
-            <img class="features-img" src="images/advantage-icon-food.svg" alt="Изображение Еды">
+            <img class="features-img" src="images/advantage-icon-food.svg" alt="Изображение Еды" width="76" height="72">
             <h3 class="features-title">Еда</h3>
             <p class="features-subtitle">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="features-item">
-            <img class="features-img" src="images/advantage-icon-souvenir.svg" alt="Изображение Сувенира">
+            <img class="features-img" src="images/advantage-icon-souvenir.svg" alt="Изображение Сувенира" width="76" height="76">
             <h3 class="features-title">Сувениры</h3>
             <p class="features-subtitle">Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </li>
@@ -336,16 +335,14 @@
         <div class="amount-kids-container">
           <label class="label-kids" for="kids">
             <span>Дети:</span>
-            <button class="button-tooltip" type="button" aria-labelledby="tooltip-label">
-<!--              @TODO button  не может быть ребенком label, не проходит валидацию, сделай вместо button div-->
+            <span class="button-tooltip" aria-labelledby="tooltip-label">
               <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
               </svg>
               <span class="tooltip-info" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-            </button>
+            </span>
           </label>
-          <div class="amount-kids-container">
-<!--            @TODO смени класс ^^^ на amount-kids-input-->
+          <div class="amount-kids-input">
             <button class="amount-remove" type="button">
               <span class="visually-hidden">Добавить</span>
               <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">

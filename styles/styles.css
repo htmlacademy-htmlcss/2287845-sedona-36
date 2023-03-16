@@ -562,9 +562,7 @@ body {
   align-items: center;
   font-family: "Pt Sans", "Arial", sans-serif;
   padding: 0;
-  gap: 31px;
-
-  /*@TODO gap: 19px;*/
+  gap: 19px;
 }
 
 .filter-price-title {
@@ -699,8 +697,6 @@ body {
   font-family: "Pt Sans", "Arial", sans-serif;
   border: 3px solid transparent;
   border-radius: 4px;
-  margin-bottom: -11px;
-  /*@TODO убери margin-bottom*/
 }
 
 .filter-button-reset:hover {
@@ -841,9 +837,7 @@ body {
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  align-items: flex-start;
-
-  /*@TODO убери align-items добавь align-content*/
+  align-content: flex-start;
 }
 
 
@@ -876,11 +870,9 @@ body {
 .hotel-card-buttons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   width: 100%;
-
-  /*@TODO поменяй align-items на align-items: flex-start;*/
 }
 
 .hotel-card-button-brown {
@@ -1451,7 +1443,7 @@ body {
   margin: 0 0 23px 0;
 }
 
-.modal-form-third{
+.modal-form-third {
   margin: 0 0 48px 0;
 }
 
@@ -1678,12 +1670,10 @@ body {
   background-color: #83B3D3;
   cursor: pointer;
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /*@TODO добавь flex-shrink: 0*/
+  flex-shrink: 0;
 }
 
 .button-tooltip::before {
@@ -1705,8 +1695,7 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   width: 256px;
-  /* display: none; */
-  /*@TODO раскоментируй код, у тебя не работает скрытие тултипа*/
+  display: none;
   padding: 21px 18px 18px 22px;
   position: absolute;
   top: 40px;
@@ -1744,11 +1733,12 @@ body {
   line-height: 20px;
 }
 
-/* @TODO добавь */
-/* .amount-kids-input {*/
-/*position: relative;*/
-/*width: 110px;*/
-/*flex-shrink: 0;}*/
+
+.amount-kids-input {
+  position: relative;
+  width: 110px;
+  flex-shrink: 0;
+}
 
 .modal-button-submit {
   border: none;
