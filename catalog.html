@@ -82,28 +82,32 @@
                 <legend class="filter-legend">Инфраструктура:</legend>
                 <ul class="filter-fieldset-list">
                   <li class="filter-fieldset-item">
+
                     <label class="filter-checkbox" for="pool">
-                      <input class="control visually-hidden" type="checkbox" id="pool" name="pool" checked>
+                      <input class="control" type="checkbox" id="pool" name="pool" checked>
                       <span class="control-mark"></span>
-                      <span class="filter-fieldset-span"></span>
-                      Бассейн
+                      <span class="filter-fieldset-span">
+                        Бассейн
+                      </span>
+                    </label>
+
+                  </li>
+                  <li class="filter-fieldset-item">
+
+                    <label class="filter-checkbox" for="parking">
+                      <input class="control" type="checkbox" id="parking" name="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="filter-fieldset-span">Парковка</span>
                     </label>
                   </li>
                   <li class="filter-fieldset-item">
-                    <label class="filter-checkbox">
-                      <input class="control visually-hidden" type="checkbox" name="parking" checked>
+
+                    <label class="filter-checkbox" for="wifi">
+                      <input class="control" type="checkbox" id="wifi" name="wifi">
                       <span class="control-mark"></span>
-                      <span class="filter-fieldset-span"></span>
-                      Парковка
+                      <span class="filter-fieldset-span">Wi-Fi</span>
                     </label>
-                  </li>
-                  <li class="filter-fieldset-item">
-                    <label class="filter-checkbox">
-                      <input class="control visually-hidden" type="checkbox" name="wifi">
-                      <span class="control-mark"></span>
-                      <span class="filter-fieldset-span"></span>
-                      Wi-Fi
-                    </label>
+
                   </li>
                 </ul>
               </fieldset>
@@ -112,28 +116,31 @@
                 <legend class="filter-legend">Тип жилья:</legend>
                 <ul class="filter-fieldset-list">
                   <li class="filter-fieldset-item">
+
                     <label class="filter-checkbox">
-                      <input type="radio" class="control visually-hidden" name="housing" value="#" checked>
+                      <input type="radio" class="control" name="housing" value="#" checked>
                       <span class="control-mark-radio"></span>
-                      <span class="filter-fieldset-span"></span>
-                      Гостиница
+                      <span class="filter-fieldset-span">Гостиница</span>
                     </label>
+
                   </li>
                   <li class="filter-fieldset-item">
+
                     <label class="filter-checkbox">
-                      <input type="radio" class="control visually-hidden" name="housing" value="#">
+                      <input type="radio" class="control" name="housing" value="#">
                       <span class="control-mark-radio"></span>
-                      <span class="filter-fieldset-span"></span>
-                      Мотель
+                      <span class="filter-fieldset-span">Мотель</span>
                     </label>
+
                   </li>
                   <li class="filter-fieldset-item">
+
                     <label class="filter-checkbox">
-                      <input type="radio" class="control visually-hidden" name="housing" value="#">
+                      <input type="radio" class="control" name="housing" value="#">
                       <span class="control-mark-radio"></span>
-                      <span class="filter-fieldset-span"></span>
-                      Апартаменты
+                      <span class="filter-fieldset-span">Апартаменты</span>
                     </label>
+
                   </li>
                 </ul>
               </fieldset>
@@ -182,7 +189,7 @@
               <option class="catalog-cheap" value="cheap">Сначала дешевые</option>
             </select>
             <div class="catalog-view">
-              <a href="#" class="button-view" aria-label="Показать мелкие карточки">
+              <a href="#" class="button-view button-view-active" aria-label="Показать мелкие карточки">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_69108_52)">
                     <path d="M4 0H0V6H4V0Z" fill="black"/>
@@ -408,7 +415,7 @@
       </li>
     </ul>
     <a class="footer-tel" href="tel:78128121212">+7 (812) 812-12-12</a>
-    <a class="footer-link" href="https://htmlacademy.ru/" target="_blank">
+    <a class="footer-link" href="https://htmlacademy.ru/" target="_blank" aria-label="htmlacademy">
       <svg class="footer-svg" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 13.2564V15.8564H2.5V13.2564H0Z"/>
         <path

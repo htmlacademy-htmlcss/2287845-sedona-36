@@ -29,7 +29,7 @@
         </nav>
         <div class="buttons">
           <div class="button-container">
-            <div class="button-search">
+
               <a class="buttons-item" href="#" aria-label="Перейти в поиск">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -37,8 +37,8 @@
                     fill="black"/>
                 </svg>
               </a>
-            </div>
-            <div class="button-favorite">
+
+
               <a class="buttons-item buttons-item-favorite" href="#" aria-label="Перейти в Избранное">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -47,7 +47,7 @@
                 </svg>
                 <span class="counter-icon">12</span>
               </a>
-            </div>
+
           </div>
           <button class="button button-header" type="button">
             Хочу сюда!
@@ -79,21 +79,21 @@
           <li class="advantage-item">
             <div class="advantage-content">
               <h3 class="advantage-title">Небольшая площадь</h3>
-              <hr class="rectangle">
+              <hr class="rectangle rectangle-gray">
               <p class="advantage-subtitle">Все достопримечательности находятся очень близко</p>
             </div>
           </li>
           <li class="advantage-item">
             <div class="advantage-content">
               <h3 class="advantage-title">Красивая дорога</h3>
-              <hr class="rectangle">
+              <hr class="rectangle rectangle-gray">
               <p class="advantage-subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantage-item">
             <div class="advantage-content">
               <h3 class="advantage-title">Мало туристов</h3>
-              <hr class="rectangle">
+              <hr class="rectangle rectangle-gray">
               <p class="advantage-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
@@ -116,19 +116,17 @@
         </div>
         <ul class="features-list">
           <li class="features-item">
-            <img class="features-img" src="images/advantage-icon-house.svg" alt="Изображение Жилья" width="77"
-                 height="72">
+            <span class="features-item-house"></span>
             <h3 class="features-title">Жильё</h3>
             <p class="features-subtitle">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
           <li class="features-item">
-            <img class="features-img" src="images/advantage-icon-food.svg" alt="Изображение Еды" width="76" height="72">
+            <span class="features-item-food"></span>
             <h3 class="features-title">Еда</h3>
             <p class="features-subtitle">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="features-item">
-            <img class="features-img" src="images/advantage-icon-souvenir.svg" alt="Изображение Сувенира" width="76"
-                 height="76">
+            <span class="features-item-souvenir"></span>
             <h3 class="features-title">Сувениры</h3>
             <p class="features-subtitle">Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </li>
@@ -186,7 +184,7 @@
       </li>
     </ul>
     <a class="footer-tel" href="tel:78128121212">+7 (812) 812-12-12</a>
-    <a class="footer-link" href="https://htmlacademy.ru/" target="_blank">
+    <a class="footer-link" href="https://htmlacademy.ru/" target="_blank" aria-label="htmlacademy">
       <svg class="footer-svg" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 13.2564V15.8564H2.5V13.2564H0Z"/>
         <path
@@ -217,7 +215,7 @@
 </div>
 
 
-<div class="modal-search modal-open">
+<div class="modal-search">
   <section class="modal-container">
     <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
     <button class="modal-button-close" type="button">
@@ -228,93 +226,61 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
     <form class="modal-input-container" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="modal-form-row modal-form-first">
+      <div class="modal-form-row">
         <label class="label-in" for="date-in">Дата заезда:</label>
         <div class="input-in-container">
           <input class="input-in" type="text" name="date-come-in" id="date-in" placeholder="27 апреля 2020" required>
           <button class="input-calendar-in" type="button">
-            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                 fill-opacity="0.3">
-              <path
-                d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z"
-                fill="black"/>
-              <path
-                d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z"
-                fill="black"/>
-              <path d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z"
-                    fill="black"/>
-              <path
-                d="M10.25 10C10.55 10 10.75 9.8 10.75 9.5C10.75 9.2 10.55 9 10.25 9C9.95 9 9.75 9.2 9.75 9.5C9.75 9.8 9.95 10 10.25 10Z"
-                fill="black"/>
-              <path
-                d="M5.75 11C5.45 11 5.25 11.2 5.25 11.5C5.25 11.8 5.45 12 5.75 12C6.05 12 6.25 11.8 6.25 11.5C6.25 11.2 6.05 11 5.75 11Z"
-                fill="black"/>
-              <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
-                    fill="black"/>
-              <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
-                    fill="black"/>
-              <path
-                d="M8 11C7.7 11 7.5 11.2 7.5 11.5C7.5 11.8 7.7 12 8 12C8.3 12 8.5 11.8 8.5 11.5C8.5 11.2 8.3 11 8 11Z"
-                fill="black"/>
-              <path
-                d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z"
-                fill="black"/>
-              <path d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z"
-                    fill="black"/>
-              <path
-                d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z"
-                fill="black"/>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.3">
+                <path d="M7.75 12C8.05 12 8.25 11.8 8.25 11.5C8.25 11.2 8.05 11 7.75 11C7.45 11 7.25 11.2 7.25 11.5C7.25 11.8 7.45 12 7.75 12Z" fill="black"/>
+                <path d="M17 4H15V2H14V4H6V2H5V4H3C2.4 4 2 4.4 2 5V16C2 16.5 2.4 17 3 17H17C17.5 17 18 16.5 18 16V5C18 4.4 17.5 4 17 4ZM17 16H3V9H17V16ZM3 8V5H5V7H6V5H14V7H15V5H17V8H3Z" fill="black"/>
+                <path d="M10 12C10.3 12 10.5 11.8 10.5 11.5C10.5 11.2 10.3 11 10 11C9.7 11 9.5 11.2 9.5 11.5C9.5 11.8 9.7 12 10 12Z" fill="black"/>
+                <path d="M12.25 12C12.55 12 12.75 11.8 12.75 11.5C12.75 11.2 12.55 11 12.25 11C11.95 11 11.75 11.2 11.75 11.5C11.75 11.8 11.95 12 12.25 12Z" fill="black"/>
+                <path d="M7.75 13C7.45 13 7.25 13.2 7.25 13.5C7.25 13.8 7.45 14 7.75 14C8.05 14 8.25 13.8 8.25 13.5C8.25 13.2 8.05 13 7.75 13Z" fill="black"/>
+                <path d="M5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12Z" fill="black"/>
+                <path d="M5.5 13C5.2 13 5 13.2 5 13.5C5 13.8 5.2 14 5.5 14C5.8 14 6 13.8 6 13.5C6 13.2 5.8 13 5.5 13Z" fill="black"/>
+                <path d="M10 13C9.7 13 9.5 13.2 9.5 13.5C9.5 13.8 9.7 14 10 14C10.3 14 10.5 13.8 10.5 13.5C10.5 13.2 10.3 13 10 13Z" fill="black"/>
+                <path d="M12.25 13C11.95 13 11.75 13.2 11.75 13.5C11.75 13.8 11.95 14 12.25 14C12.55 14 12.75 13.8 12.75 13.5C12.75 13.2 12.55 13 12.25 13Z" fill="black"/>
+                <path d="M14.5 12C14.8 12 15 11.8 15 11.5C15 11.2 14.8 11 14.5 11C14.2 11 14 11.2 14 11.5C14 11.8 14.2 12 14.5 12Z" fill="black"/>
+                <path d="M14.5 13C14.2 13 14 13.2 14 13.5C14 13.8 14.2 14 14.5 14C14.8 14 15 13.8 15 13.5C15 13.2 14.8 13 14.5 13Z" fill="black"/>
+              </g>
             </svg>
+
             <span class="visually-hidden">Выбрать дату с помошью календаря</span>
           </button>
         </div>
         <span class="error-date">Мы не можем отправить вас в прошлое.</span>
       </div>
-      <div class="modal-form-row modal-form-second">
+      <div class="modal-form-row">
         <label class="label-out" for="date-out">Дата выезда:</label>
         <div class="input-out-container">
           <input class="input-out" type="text" name="date-come-out" id="date-out" placeholder="1 сентября 2023"
                  required>
           <button class="input-calendar-out" type="button">
-            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                 fill-opacity="0.3">
-              <path
-                d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z"
-                fill="black"/>
-              <path
-                d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z"
-                fill="black"/>
-              <path d="M8 10C8.3 10 8.5 9.8 8.5 9.5C8.5 9.2 8.3 9 8 9C7.7 9 7.5 9.2 7.5 9.5C7.5 9.8 7.7 10 8 10Z"
-                    fill="black"/>
-              <path
-                d="M10.25 10C10.55 10 10.75 9.8 10.75 9.5C10.75 9.2 10.55 9 10.25 9C9.95 9 9.75 9.2 9.75 9.5C9.75 9.8 9.95 10 10.25 10Z"
-                fill="black"/>
-              <path
-                d="M5.75 11C5.45 11 5.25 11.2 5.25 11.5C5.25 11.8 5.45 12 5.75 12C6.05 12 6.25 11.8 6.25 11.5C6.25 11.2 6.05 11 5.75 11Z"
-                fill="black"/>
-              <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z"
-                    fill="black"/>
-              <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z"
-                    fill="black"/>
-              <path
-                d="M8 11C7.7 11 7.5 11.2 7.5 11.5C7.5 11.8 7.7 12 8 12C8.3 12 8.5 11.8 8.5 11.5C8.5 11.2 8.3 11 8 11Z"
-                fill="black"/>
-              <path
-                d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z"
-                fill="black"/>
-              <path d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z"
-                    fill="black"/>
-              <path
-                d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z"
-                fill="black"/>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.3">
+                <path d="M7.75 12C8.05 12 8.25 11.8 8.25 11.5C8.25 11.2 8.05 11 7.75 11C7.45 11 7.25 11.2 7.25 11.5C7.25 11.8 7.45 12 7.75 12Z" fill="black"/>
+                <path d="M17 4H15V2H14V4H6V2H5V4H3C2.4 4 2 4.4 2 5V16C2 16.5 2.4 17 3 17H17C17.5 17 18 16.5 18 16V5C18 4.4 17.5 4 17 4ZM17 16H3V9H17V16ZM3 8V5H5V7H6V5H14V7H15V5H17V8H3Z" fill="black"/>
+                <path d="M10 12C10.3 12 10.5 11.8 10.5 11.5C10.5 11.2 10.3 11 10 11C9.7 11 9.5 11.2 9.5 11.5C9.5 11.8 9.7 12 10 12Z" fill="black"/>
+                <path d="M12.25 12C12.55 12 12.75 11.8 12.75 11.5C12.75 11.2 12.55 11 12.25 11C11.95 11 11.75 11.2 11.75 11.5C11.75 11.8 11.95 12 12.25 12Z" fill="black"/>
+                <path d="M7.75 13C7.45 13 7.25 13.2 7.25 13.5C7.25 13.8 7.45 14 7.75 14C8.05 14 8.25 13.8 8.25 13.5C8.25 13.2 8.05 13 7.75 13Z" fill="black"/>
+                <path d="M5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12Z" fill="black"/>
+                <path d="M5.5 13C5.2 13 5 13.2 5 13.5C5 13.8 5.2 14 5.5 14C5.8 14 6 13.8 6 13.5C6 13.2 5.8 13 5.5 13Z" fill="black"/>
+                <path d="M10 13C9.7 13 9.5 13.2 9.5 13.5C9.5 13.8 9.7 14 10 14C10.3 14 10.5 13.8 10.5 13.5C10.5 13.2 10.3 13 10 13Z" fill="black"/>
+                <path d="M12.25 13C11.95 13 11.75 13.2 11.75 13.5C11.75 13.8 11.95 14 12.25 14C12.55 14 12.75 13.8 12.75 13.5C12.75 13.2 12.55 13 12.25 13Z" fill="black"/>
+                <path d="M14.5 12C14.8 12 15 11.8 15 11.5C15 11.2 14.8 11 14.5 11C14.2 11 14 11.2 14 11.5C14 11.8 14.2 12 14.5 12Z" fill="black"/>
+                <path d="M14.5 13C14.2 13 14 13.2 14 13.5C14 13.8 14.2 14 14.5 14C14.8 14 15 13.8 15 13.5C15 13.2 14.8 13 14.5 13Z" fill="black"/>
+              </g>
             </svg>
+
             <span class="visually-hidden">Выбрать дату с помошью календаря</span>
           </button>
         </div>
         <span class="warning-date">На эти даты есть свободные номера. Пока есть.</span>
       </div>
 
-      <div class="modal-form-multi-column modal-form-third">
+      <div class="modal-form-multi-column ">
         <div class="amount-adults-container">
           <label class="label-adults" for="adults">Взрослые:</label>
           <div class="amount-adults-input">
