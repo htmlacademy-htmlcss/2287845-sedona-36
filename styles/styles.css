@@ -195,6 +195,7 @@ body {
   background-image: url("../images/advantage-icon-house.svg");
   background-repeat: no-repeat;
 }
+
 .features-item-food {
   display: block;
   width: 76px;
@@ -202,6 +203,7 @@ body {
   background-image: url("../images/advantage-icon-food.svg");
   background-repeat: no-repeat;
 }
+
 .features-item-souvenir {
   display: block;
   width: 76px;
@@ -423,8 +425,6 @@ body {
   align-items: flex-start;
   gap: 16px;
 }
-
-
 
 
 .filter-header {
@@ -763,8 +763,6 @@ body {
 }
 
 
-
-
 .button-view {
   display: flex;
   justify-content: space-between;
@@ -773,7 +771,7 @@ body {
   padding: 16px 14px;
 }
 
-.button-view-active  {
+.button-view-active {
   border: 2px solid #000000;
 }
 
@@ -1106,7 +1104,7 @@ body {
 
 
 .rectangle {
-  background-color:  rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   width: 60px;
   height: 2px;
   margin: 0;
@@ -1114,7 +1112,7 @@ body {
 }
 
 .rectangle-gray {
-  background-color:  rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .section-white .section-title {
@@ -1742,8 +1740,8 @@ body {
   display: none;
   padding: 21px 18px 18px 22px;
   position: absolute;
-  top: 40px;
-  left: 59%;
+  top: 43px;
+  left: 47%;
   transform: translateX(-50%);
 }
 
@@ -1855,7 +1853,7 @@ body {
 
 .amount-remove svg,
 .amount-add svg {
- fill: rgba(117, 97, 87, 0.3);
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .amount-remove:hover svg,
@@ -1890,7 +1888,7 @@ body {
 
 .button-tooltip:hover .tooltip-info,
 .button-tooltip:focus .tooltip-info {
-  /*display: block;*/
+  display: block;
 }
 
 
